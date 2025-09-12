@@ -1,5 +1,3 @@
-import { NextResponse } from "next/server";
-
 export function GET() {
   const allowCrawling = process.env.ALLOW_CRAWLING === "true";
 
@@ -9,7 +7,7 @@ Allow: /`
     : `User-agent: *
 Disallow: /`;
 
-  return new NextResponse(content, {
+  return new Response(content, {
     status: 200,
     headers: {
       "Content-Type": "text/plain",
