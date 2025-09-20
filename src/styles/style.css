@@ -2593,7 +2593,8 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .work-together__img-1 img {
-  border-radius: var(--oslim-bdr-radius);
+  border-radius: 16px;
+  width: 100%;
 }
 
 .work-together__img-2 {
