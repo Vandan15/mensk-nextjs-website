@@ -140,15 +140,12 @@ export const onePageNavItemsThree = [
 ];
 
 export const servicesSubNavItems = [
-  { id: 1, name: "Services", href: "/services" },
-  { id: 2, name: "Services Two", href: "/services-2" },
-  { id: 3, name: "Services Three", href: "/services-3" },
-  { id: 4, name: "Consumer Product", href: "/consumer-product" },
-  { id: 5, name: "Audit Marketing", href: "/audit-marketing" },
-  { id: 6, name: "Banking Advising", href: "/banking-advising" },
-  { id: 7, name: "Business Growth", href: "/business-growth" },
-  { id: 8, name: "Financial Advice", href: "/financial-advice" },
-  { id: 9, name: "Marketing Rules", href: "/marketing-rules" },
+  { id: 1, name: "Company Incorporation", href: "/services/company-incorporation" },
+  { id: 2, name: "Trademarks", href: "/services/trademarks" },
+  { id: 3, name: "Wills", href: "/services/wills" },
+  { id: 4, name: "Real Estate", href: "/services/real-estate" },
+  { id: 5, name: "Legal Advisory", href: "/services/legal-advisory" },
+  { id: 6, name: "Wealth Management", href: "/services/wealth-management" },
 ];
 
 export const navItems = [
@@ -162,7 +159,7 @@ export const navItems = [
   {
     id: 2,
     name: "About",
-    href: "/services",
+    href: "/",
     // subNavItems: servicesSubNavItems,
   },
   // {

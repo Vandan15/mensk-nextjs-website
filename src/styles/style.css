@@ -716,7 +716,7 @@ input[type="search"]::-webkit-search-results-decoration {
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 220px;
+  min-width: 250px;
   background-color: #fff;
   flex-direction: column;
   justify-content: flex-start;

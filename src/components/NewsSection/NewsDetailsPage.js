@@ -11,12 +11,12 @@ const NewsDetailsPage = () => {
     <section className="news-details">
       <Container>
         <Row>
-          <Col xl={8} lg={7}>
+          <Col xl={12} lg={12}>
             <NewsDetailsLeft news={newsDetails} />
           </Col>
-          <Col xl={4} lg={5}>
+          {/* <Col xl={4} lg={5}>
             <NewsSidebarSide {...newsSidebarSide} />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </section>
