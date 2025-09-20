@@ -24,8 +24,8 @@ const WhyChooseOne = () => {
           </Col>
           <Col xl={7}>
             <div className="why-choose-one__right">
-              <Title title={title} tagline={tagline} className="text-left" />
-              <p className="why-choose-one__text">{text}</p>
+             { title&&<Title title={title} tagline={tagline} className="text-left" />}
+              {text&&<p className="why-choose-one__text">{text}</p>}
               <ul className="list-unstyled why-choose-one__points">
                 {points.map((point, i) => (
                   <li key={i}>
@@ -38,11 +38,11 @@ const WhyChooseOne = () => {
                   </li>
                 ))}
               </ul>
-              <div className="why-choose-one__progress">
+             {progresses?.length > 0 && <div className="why-choose-one__progress">
                 {progresses.map((progress) => (
                   <ProgressWhyChose key={progress.id} progress={progress} />
                 ))}
-              </div>
+              </div>}
             </div>
           </Col>
         </Row>
