@@ -15,7 +15,7 @@ export default function Blog() {
       <Header />
       <PageHeader page="Blog" title="Blog Posts" />
       <NewsOne className="news-page" hideTitle>
-        <BlogPagination />
+        {/* <BlogPagination /> */}
       </NewsOne>
     </Layout>
   );

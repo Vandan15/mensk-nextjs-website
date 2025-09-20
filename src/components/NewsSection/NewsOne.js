@@ -6,6 +6,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Title from "../Reuseable/Title";
 import SingleNewsOne from "./SingleNewsOne";
+import Link from "next/link";
 
 const { tagline, title, newsData } = newsOne;
 
@@ -43,6 +44,17 @@ const NewsOne = ({
             </Col>
           ))}
         </Row>
+        {!hideTitle && (
+          <Row>
+            <Col xl={12} className="text-center">
+              <div className="news-one__cta">
+                <Link href="/blog" className="thm-btn">
+                  Access All Insights
+                </Link>
+              </div>
+            </Col>
+          </Row>
+        )}
         {children}
       </Container>
     </section>

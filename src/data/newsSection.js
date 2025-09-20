@@ -2,58 +2,41 @@ import image from "@/images/blog/news-details-img-1.jpg";
 import { inputs } from "./contact";
 import { socials } from "./teamSection";
 
+// Import specific blog images
+import consultantsRoleImg from "@/images/blog/the-role-of-consultants-in-project-development-and-execution.png";
+import businessOpportunitiesImg from "@/images/blog/how-to-identify-profitable-business-opportunities-with-market-research.png";
+import marketResearchTrendsImg from "@/images/blog/trends-in-market-research-that-will-dominate-2025.png";
+
 export const newsOne = {
   tagline: "What’s Happening",
-  title: "News & Articles",
+  title: "Stay Informed. Stay Ahead. UAE Market Insights.",
   newsData: [
     {
       id: 1,
-      image: "news-1-1.jpg",
-      subtitle: "finance",
-      title: "Accounting Support During the Exponential Growth",
-      date: "20 Oct, 2022",
+      image: consultantsRoleImg,
+      // subtitle: "finance",
+      title: "The Role of Consultants in Project Development & Execution",
+      date: "April 30, 2025",
       comments: 2,
     },
+
     {
       id: 2,
-      image: "news-1-2.jpg",
-      subtitle: "finance",
-      title: "Taking seamless key performance indicators offline",
-      date: "20 Oct, 2022",
+      image: businessOpportunitiesImg,
+      // subtitle: "finance",
+      title: "How to Identify Profitable Business Opportunities with Market Research",
+      date: "April 29, 2025",
       comments: 2,
     },
     {
       id: 3,
-      image: "news-1-3.jpg",
-      subtitle: "finance",
-      title: "Competently parallel task fully researched data and",
-      date: "20 Oct, 2022",
+      image: marketResearchTrendsImg,
+      // subtitle: "finance",
+      title: "Trends in Market Research That Will Dominate 2025",
+      date: "April 29, 2025",
       comments: 2,
     },
-    {
-      id: 4,
-      image: "news-1-4.jpg",
-      subtitle: "finance",
-      title: "Competently parallel task fully researched data and",
-      date: "20 Oct, 2022",
-      comments: 2,
-    },
-    {
-      id: 5,
-      image: "news-1-5.jpg",
-      subtitle: "finance",
-      title: "Competently parallel task fully researched data and",
-      date: "20 Oct, 2022",
-      comments: 2,
-    },
-    {
-      id: 6,
-      image: "news-1-6.jpg",
-      subtitle: "finance",
-      title: "Competently parallel task fully researched data and",
-      date: "20 Oct, 2022",
-      comments: 2,
-    },
+
   ],
 };
 

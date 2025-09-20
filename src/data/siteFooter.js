@@ -4,13 +4,10 @@ import bg from "@/images/shapes/site-footer-shape-1.png";
 const footerData = {
   bg,
   logo,
-  aboutText: "Great Experience for Building Customers & Businesses",
+  aboutText: ["Mensk Consultancy LLC"],
+  aboutSubText:["Licensed by Dubai Economic Department","License #: [Number]"],
   socials: [
-    // {
-    //   id: 1,
-    //   icon: "fab fa-twitter",
-    //   href: "#",
-    // },
+    
     // {
     //   id: 2,
     //   icon: "fab fa-facebook",
@@ -21,36 +18,47 @@ const footerData = {
     //   icon: "fab fa-pinterest-p",
     //   href: "#",
     // },
-    {
-      id: 4,
-      icon: "fab fa-instagram",
-      href: "https://www.instagram.com/menskconsultancydubai/",
-    },
+    // {
+    //   id: 4,
+    //   icon: "fab fa-instagram",
+    //   href: "https://www.instagram.com/menskconsultancydubai/",
+    // },
     {
       id: 5,
       icon: "fab fa-linkedin",
       href: "https://www.linkedin.com/company/mensk-consultancy-llc/",
     },
+    {
+      id: 7,
+      icon: "fab fa-twitter",
+      href: "https://www.linkedin.com/company/mensk-consultancy-llc/",
+    },
+    
+    {
+      id: 6,
+      icon: "fab fa-whatsapp",
+      href: "https://wa.me/971501234567",
+    },
   ],
   links: [
     {
       id: 1,
-      text: "About",
+      text: "About Us",
       href: "/about",
     },
-    {
-      id: 2,
-      text: "Meet our team",
-      href: "/team",
-    },
-    {
-      id: 3,
-      text: "Case stories",
-      href: "/case",
-    },
+    // {
+    //   id: 2,
+    //   text: "Meet our team",
+    //   href: "/team",
+    // },
+    // {
+    //   id: 3,
+    //   text: "Case stories",
+    //   href: "/case",
+    // },
     {
       id: 4,
-      text: "Latest news",
+      text: "Blog",
       href: "/blog",
     },
     {
@@ -58,32 +66,32 @@ const footerData = {
       text: "Contact",
       href: "/contact",
     },
-    {
-      id: 6,
-      text: "Support",
-      href: "/about",
-    },
+    // {
+    //   id: 6,
+    //   text: "Support",
+    //   href: "/about",
+    // },
     {
       id: 7,
-      text: "Terms of use",
-      href: "/about",
+      text: "Terms of Service",
+      href: "/terms",
     },
     {
       id: 8,
-      text: "Privacy policy",
-      href: "/about",
+      text: "Privacy Policy",
+      href: "/privacy",
     },
-    {
-      id: 9,
-      text: "Help",
-      href: "/about",
-    },
+    // {
+    //   id: 9,
+    //   text: "Help",
+    //   href: "/about",
+    // },
   ],
   newsletterText: "Subsrcibe for our upcoming latest articles and resources",
-  address: "60 road, broklyn golden street new york. USA",
-  phone: "+1- ( 246 ) 333 - 0079",
-  phoneHref: "12463330079",
-  email: "needhelp@company.com",
+  address: "1974-0, Al Safiya Building, Hor Al Anz, Dubai, UAE",
+  phone: "+97-1529056309",
+  phoneHref: "971529056309",
+  email: "info@menskconsultancy.com",
   author: "Oslim",
   year: new Date().getFullYear(),
 };
