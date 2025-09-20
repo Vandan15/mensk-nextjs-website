@@ -1,4 +1,4 @@
-import image from "@/images/resources/why-choose-1-1.jpg";
+import image from "@/images/resources/why-choose-us.jpg";
 
 export const whyChooseOne = {
   image,

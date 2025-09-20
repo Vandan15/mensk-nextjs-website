@@ -1,5 +1,5 @@
 import ContextProvider from "@/context/ContextProvider";
-import { Catamaran } from "next/font/google";
+// import { Catamaran } from "next/font/google";
 import "@/vendors/animate/animate.min.css";
 import "@/vendors/animate/custom-animate.css";
 import "@/vendors/fontawesome/css/all.min.css";
@@ -16,11 +16,11 @@ import "tiny-slider/dist/tiny-slider.css";
 import "@/styles/style.css";
 import "@/styles/responsive.css";
 
-const catamaran = Catamaran({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  display: "swap",
-});
+// const catamaran = Catamaran({
+//   subsets: ["latin"],
+//   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+//   display: "swap",
+// });
 
 export const metadata = {
   title: "Oslim NextJS Template For Business",
@@ -42,7 +42,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={catamaran.className}>
+      <body>
         <ContextProvider>
           {children}
         </ContextProvider>

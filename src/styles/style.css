@@ -1,3 +1,6 @@
+/* Import Custom Fonts */
+@import './fonts.css';
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -18,15 +21,17 @@
 # Common
 --------------------------------------------------------------*/
 :root {
-  --oslim-font: "Catamaran", sans-serif;
+  --oslim-font: "Futura", "Catamaran", sans-serif;
   --oslim-reey-font: "reeyregular";
   --oslim-gray: #81808c;
   --oslim-gray-rgb: 129, 128, 140;
   --oslim-white: #ffffff;
   --oslim-white-rgb: 255, 255, 255;
-  --oslim-black: #191825;
+  /* --oslim-black: #191825; */
+  --oslim-black: #1c1d20;
   --oslim-black-rgb: 25, 24, 37;
   --oslim-base: #ff613c;
+  --oslim-base: #a48060;
   --oslim-base-rgb: 255, 97, 60;
   --oslim-extra: #fcf5f3;
   --oslim-extra-rgb: 252, 245, 243;
@@ -307,7 +312,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .section-title__title {
   margin: 0;
-  font-size: 48px;
+  font-size: 38px;
   line-height: 65px;
   font-weight: 800;
 }
@@ -6423,7 +6428,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .how-we-works__point-text {
-  color: var(--oslim-text);
+  color: var(--oslim-font);
   font-size: 16px;
   line-height: 26px;
   margin: 0;

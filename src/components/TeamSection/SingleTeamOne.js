@@ -35,7 +35,7 @@ const SingleTeamOne = ({ team = {} }) => {
           }}>
             <p style={{
               display: '-webkit-box',
-              WebkitLineClamp: 3,
+              // WebkitLineClamp: 3,
               WebkitBoxOrient: 'vertical',
               overflow: 'hidden',
               textOverflow: 'ellipsis',
