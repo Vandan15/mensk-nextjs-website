@@ -6,25 +6,30 @@ const footerData = {
   logo,
   aboutText: "Great Experience for Building Customers & Businesses",
   socials: [
-    {
-      id: 1,
-      icon: "fab fa-twitter",
-      href: "#",
-    },
-    {
-      id: 2,
-      icon: "fab fa-facebook",
-      href: "#",
-    },
-    {
-      id: 3,
-      icon: "fab fa-pinterest-p",
-      href: "#",
-    },
+    // {
+    //   id: 1,
+    //   icon: "fab fa-twitter",
+    //   href: "#",
+    // },
+    // {
+    //   id: 2,
+    //   icon: "fab fa-facebook",
+    //   href: "#",
+    // },
+    // {
+    //   id: 3,
+    //   icon: "fab fa-pinterest-p",
+    //   href: "#",
+    // },
     {
       id: 4,
       icon: "fab fa-instagram",
-      href: "#",
+      href: "https://www.instagram.com/menskconsultancydubai/",
+    },
+    {
+      id: 5,
+      icon: "fab fa-linkedin",
+      href: "https://www.linkedin.com/company/mensk-consultancy-llc/",
     },
   ],
   links: [

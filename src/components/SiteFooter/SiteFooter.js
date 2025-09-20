@@ -48,7 +48,7 @@ const SiteFooter = ({ footerClassName = "" }) => {
                 </div>
                 <div className="site-footer__social">
                   {socials.map(({ id, href, icon }) => (
-                    <a key={id} href={href}>
+                    <a key={id} href={href} target="_blank">
                       <i className={icon}></i>
                     </a>
                   ))}

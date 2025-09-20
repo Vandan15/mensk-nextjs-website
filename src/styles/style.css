@@ -180,7 +180,7 @@ input[type="search"]::-webkit-search-results-decoration {
   font-size: 14px;
   font-weight: 800;
   text-transform: uppercase;
-  padding: 20px 60px 16px;
+  padding: 8px 16px;
   transition: all 0.3s linear;
   overflow: hidden;
   letter-spacing: 0.1em;
@@ -287,7 +287,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .section-title {
   margin-top: -4px;
-  margin-bottom: 43px;
+  margin-bottom: 20px;
 }
 
 .section-title__tagline {
@@ -307,7 +307,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .section-title__title {
   margin: 0;
-  font-size: 55px;
+  font-size: 48px;
   line-height: 65px;
   font-weight: 800;
 }
@@ -1779,8 +1779,13 @@ input[type="search"]::-webkit-search-results-decoration {
   transform: translateY(-120px);
   transition-delay: 1000ms;
   transition: transform 2000ms ease, opacity 2000ms ease;
-  font-size: 120px;
-  line-height: 120px;
+  font-size: 72px;
+  line-height: 80px;
+}
+
+.main-slider .text-description {
+  font-size: 24px;
+  color: var(--oslim-white);
 }
 
 .main-slider .thm-btn {
@@ -2346,8 +2351,8 @@ input[type="search"]::-webkit-search-results-decoration {
 .welcome-one__bottom {
   position: relative;
   display: block;
-  padding-top: 80px;
-  padding-bottom: 60px;
+  /* padding-top: 80px;
+  padding-bottom: 60px; */
 }
 
 .welcome-one__feature {
@@ -2609,7 +2614,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .work-together__right .section-title {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .work-together__right-text {
@@ -2620,7 +2625,7 @@ input[type="search"]::-webkit-search-results-decoration {
   position: relative;
   display: block;
   margin-top: 28px;
-  margin-bottom: 44px;
+  margin-bottom: 16px;
 }
 
 .work-together__points li {

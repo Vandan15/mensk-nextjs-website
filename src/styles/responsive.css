@@ -16,7 +16,7 @@
 
   .work-together__right {
     max-width: 600px;
-    margin: 150px auto 0;
+    /* margin: 150px auto 0; */
   }
 
   .work-together {
@@ -217,7 +217,7 @@
 
   .work-together__right {
     max-width: 600px;
-    margin: 150px auto 0;
+    /* margin: 150px auto 0; */
   }
 
   .work-together {
@@ -529,7 +529,7 @@
 
   .work-together__right {
     margin-left: 0;
-    margin-top: 60px;
+    /* margin-top: 60px; */
   }
 
   .work-together {

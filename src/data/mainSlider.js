@@ -4,21 +4,23 @@ export const mainSlider = [
   {
     id: 1,
     bg: "main-slider-1-1.jpg",
-    title: "Award \n winning \n consulting",
+    title: "Your Golden Ticket to Strategic UAE Success",
+    subtitle: "Business, legal and legacy, handled with finesse by one sophisticated alliance.",
     href: "/about",
   },
   {
     id: 2,
     bg: "main-slider-1-2.jpg",
-    title: "Award \n winning \n consulting",
+    title: "Your Golden Ticket to Strategic UAE Success",
+    subtitle: "Business, legal and legacy, handled with finesse by one sophisticated alliance.",
     href: "/about",
   },
-  {
-    id: 3,
-    bg: "main-slider-1-3.jpg",
-    title: "Award \n winning \n consulting",
-    href: "/about",
-  },
+  // {
+  //   id: 3,
+  //   bg: "main-slider-1-3.jpg",
+  //   title: "Award \n winning \n consulting",
+  //   href: "/about",
+  // },
 ];
 
 export const mainSliderTwo = [

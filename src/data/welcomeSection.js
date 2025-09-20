@@ -6,8 +6,8 @@ import bg from "@/images/shapes/welcome-one-shape.png";
 export const welcomeOne = {
   bg,
   videoBg,
-  tagline: "welcome to our agency",
-  title: "Secure & Safe Advices for your Small & Big Businesses",
+  tagline: "Our Core Services",
+  title: " Your Single Gateway to UAE Excellence",
   counter: [
     {
       id: 1,
@@ -21,28 +21,29 @@ export const welcomeOne = {
     },
   ],
   videoId: "Get7rqXYrbQ",
-  features: [
-    {
-      id: 1,
-      title: "Wealth \n Management",
-      href: "/consumer-product",
-      icon: "icon-wealth",
-    },
-    {
-      id: 2,
-      title: "Audit \n Marketing",
-      href: "/audit-marketing",
-      icon: "icon-data-analytics",
-    },
-    {
-      id: 3,
-      title: "Finance \n Consulting",
-      href: "/financial-advice",
-      icon: "icon-report",
-    },
-  ],
-  bottomText:
-    "Consulting & Finance Services Built Specifically for your Business.",
+  // features: [
+  //   {
+  //     id: 1,
+  //     title: "Wealth \n Management",
+  //     href: "/consumer-product",
+  //     icon: "icon-wealth",
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "Audit \n Marketing",
+  //     href: "/audit-marketing",
+  //     icon: "icon-data-analytics",
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "Finance \n Consulting",
+  //     href: "/financial-advice",
+  //     icon: "icon-report",
+  //   },
+  // ],
+  features:[],
+  // bottomText:
+  //   "Consulting & Finance Services Built Specifically for your Business.",
 };
 
 export const welcomeTwo = {

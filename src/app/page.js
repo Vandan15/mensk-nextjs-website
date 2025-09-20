@@ -24,7 +24,7 @@ export default function Home() {
     <Layout pageTitle="Home One">
       <Header />
       <MainSlider sliders={mainSlider} showShape />
-      <WelcomeOne />
+      {/* <WelcomeOne /> */}
       <WorkTogether />
       <CaseOne />
       <BenefitsOne />
