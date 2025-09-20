@@ -28,17 +28,34 @@ export const inputs = [
 ];
 
 const common = {
-  phone: "+1- ( 246 ) 333 - 0079",
-  phoneHref: "12463330079",
-  email: "needhelp@company.com",
+  phone: "+971 52 905 6309",
+  phoneHref: "971529056309",
+  email: "info@menskconsultancy.com",
 };
 
 export const contactOne = {
   bg,
   tagline: "contact with us",
-  title: "We are Here to Help You & Your Business",
-  text: "Pellentesque ultricies quam dui, id portt tor leo \n iaculis nec. Phasellus ac neque.",
-  timeRange: "8:00 am - 6:00 pm",
+  title: "Begin Your Distinct UAE Journey Today",
+  // text: "Pellentesque ultricies quam dui, id portt tor leo \n iaculis nec. Phasellus ac neque.",
+  officeInfo: {
+    address: {
+      title: "Our Office Address",
+      text: "1974-0, Al Safiya Building, Hor Al Anz, Dubai, UAE."
+    },
+    phone: {
+      title: "Phone Number",
+      text: "+971 52 905 6309"
+    },
+    email: {
+      title: "E-Mail",
+      text: "info@menskconsultancy.com"
+    },
+    workTime: {
+      title: "Official Work Time",
+      text: "We are available 24/7"
+    }
+  },
   inputs,
   bottomTitle: "Visit Our Office",
   contacts: [
@@ -70,9 +87,9 @@ export const contactOne = {
 };
 
 export const contactPage = {
-  tagline: "Contact with us",
+  tagline: "Get Free Consultation",
   title: "Have Any Question?",
-  title2: "Write a Message",
+  title2: "Begin Your Distinct UAE Journey Today",
   inputs,
 };
 
