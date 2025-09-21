@@ -53,7 +53,7 @@ const WelcomeOne = ({ id = "" }) => {
                       ))}
                     </ul>
                   </div>
-                  <div
+                  {/* <div
                     className="welcome-one__video-link animated fadeInRight"
                     style={{ backgroundImage: `url(${videoBg.src})` }}
                   >
@@ -62,7 +62,7 @@ const WelcomeOne = ({ id = "" }) => {
                         <span className="fas fa-play"></span>
                       </div>
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </Col>
             </Row>
@@ -74,11 +74,11 @@ const WelcomeOne = ({ id = "" }) => {
               ))}
             </ul>
           </div>
-          <div className="welcome-one__find-solutions">
+          {/* <div className="welcome-one__find-solutions">
             <p className="welcome-one__find-solutions-text">
               {bottomText} <Link href="/about">Find Your Solution</Link>
             </p>
-          </div>
+          </div> */}
         </Container>
       </section>
       <VideoModal isOpen={isOpen} setOpen={setOpen} videoId={videoId} />

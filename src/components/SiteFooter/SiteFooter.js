@@ -9,6 +9,7 @@ const {
   bg,
   logo,
   aboutText,
+  aboutSubText,
   author,
   year,
   links,
@@ -36,7 +37,7 @@ const SiteFooter = ({ footerClassName = "" }) => {
         ></div>
         <Container>
           <Row>
-            <Col xl={3} lg={6} md={6} className="animated fadeInUp">
+            <Col xl={4} lg={6} md={6} className="animated fadeInUp">
               <div className="footer-widget__column footer-widget__about">
                 <div className="footer-widget__logo">
                   <Link href="/">
@@ -44,18 +45,27 @@ const SiteFooter = ({ footerClassName = "" }) => {
                   </Link>
                 </div>
                 <div className="footer-widget__about-text-box">
-                  <p className="footer-widget__about-text">{aboutText}</p>
+                    <p  className="footer-widget__about-text">
+                      {aboutText}
+                    </p>
+                    {
+                      aboutSubText && aboutSubText.map((subText, index) => (
+                        <p key={index} className="footer-widget__about-sub-text">
+                          {subText}
+                        </p>
+                      ))
+                    }
                 </div>
                 <div className="site-footer__social">
                   {socials.map(({ id, href, icon }) => (
-                    <a key={id} href={href}>
+                    <a key={id} href={href} target="_blank" rel="noreferrer">
                       <i className={icon}></i>
                     </a>
                   ))}
                 </div>
               </div>
             </Col>
-            <Col xl={3} lg={6} md={6} className="animated fadeInUp">
+            <Col xl={4} lg={6} md={6} className="animated fadeInUp">
               <div className="footer-widget__column footer-widget__explore clearfix">
                 <h3 className="footer-widget__title">Explore</h3>
                 <ul className="footer-widget__explore-list list-unstyled clearfix">
@@ -74,7 +84,7 @@ const SiteFooter = ({ footerClassName = "" }) => {
                 </ul>
               </div>
             </Col>
-            <Col xl={3} lg={6} md={6} className="animated fadeInUp">
+            {/* <Col xl={3} lg={6} md={6} className="animated fadeInUp">
               <div className="footer-widget__column footer-widget__newsletter-box clearfix">
                 <h3 className="footer-widget__title">Newsletter</h3>
                 <p className="footer-widget__newsletter-text">
@@ -100,8 +110,8 @@ const SiteFooter = ({ footerClassName = "" }) => {
                   </div>
                 </form>
               </div>
-            </Col>
-            <Col xl={3} lg={6} md={6} className="animated fadeInUp">
+            </Col> */}
+            <Col xl={4} lg={6} md={6} className="animated fadeInUp">
               <div className="footer-widget__column footer-widget__contact clearfix">
                 <h3 className="footer-widget__title">Contact</h3>
                 <p className="footer-widget__contact-text">{address}</p>
@@ -130,7 +140,8 @@ const SiteFooter = ({ footerClassName = "" }) => {
             <Col xl={12}>
               <div className="site-footer__bottom-inner">
                 <p className="site-footer__bottom-text">
-                  © Copyright {year} by <a href="#">{author}</a>
+                  Copyright {year} Mensk Consultancy All rights reserved by
+                  Zombie Marketers Pvt. Ltd.
                 </p>
               </div>
             </Col>

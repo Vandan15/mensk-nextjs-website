@@ -140,19 +140,16 @@ export const onePageNavItemsThree = [
 ];
 
 export const servicesSubNavItems = [
-  { id: 1, name: "Services", href: "/services" },
-  { id: 2, name: "Services Two", href: "/services-2" },
-  { id: 3, name: "Services Three", href: "/services-3" },
-  { id: 4, name: "Consumer Product", href: "/consumer-product" },
-  { id: 5, name: "Audit Marketing", href: "/audit-marketing" },
-  { id: 6, name: "Banking Advising", href: "/banking-advising" },
-  { id: 7, name: "Business Growth", href: "/business-growth" },
-  { id: 8, name: "Financial Advice", href: "/financial-advice" },
-  { id: 9, name: "Marketing Rules", href: "/marketing-rules" },
+  { id: 1, name: "Company Incorporation", href: "/services/company-incorporation" },
+  { id: 2, name: "Trademarks", href: "/services/trademarks" },
+  { id: 3, name: "Wills", href: "/services/wills" },
+  { id: 4, name: "Real Estate", href: "/services/real-estate" },
+  { id: 5, name: "Legal Advisory", href: "/services/legal-advisory" },
+  { id: 6, name: "Wealth Management", href: "/services/wealth-management" },
 ];
 
 export const navItems = [
-  home,
+  // home,
   {
     id: 2,
     name: "Services",
@@ -160,46 +157,52 @@ export const navItems = [
     subNavItems: servicesSubNavItems,
   },
   {
-    id: 3,
-    name: "Pages",
-    href: "",
-    subNavItems: [
-      { id: 1, name: "About", href: "/about" },
-      { id: 2, name: "Team", href: "/team" },
-      { id: 3, name: "Team Two", href: "/team-2" },
-      { id: 4, name: "Testimonials", href: "/testimonials" },
-      { id: 5, name: "FAQs", href: "/faq" },
-      { id: 6, name: "404 Error", href: "/404" },
-    ],
+    id: 2,
+    name: "About",
+    href: "/",
+    // subNavItems: servicesSubNavItems,
   },
-  {
-    id: 4,
-    name: "Cases",
-    href: "/cases",
-    subNavItems: [
-      { id: 1, name: "Cases", href: "/cases" },
-      { id: 2, name: "Cases Two", href: "/cases-2" },
-      { id: 3, name: "Case Details", href: "/case-details" },
-    ],
-  },
+  // {
+  //   id: 3,
+  //   name: "Pages",
+  //   href: "",
+  //   subNavItems: [
+  //     { id: 1, name: "About", href: "/about" },
+  //     { id: 2, name: "Team", href: "/team" },
+  //     { id: 3, name: "Team Two", href: "/team-2" },
+  //     { id: 4, name: "Testimonials", href: "/testimonials" },
+  //     { id: 5, name: "FAQs", href: "/faq" },
+  //     { id: 6, name: "404 Error", href: "/404" },
+  //   ],
+  // },
+  // {
+  //   id: 4,
+  //   name: "Cases",
+  //   href: "/cases",
+  //   subNavItems: [
+  //     { id: 1, name: "Cases", href: "/cases" },
+  //     { id: 2, name: "Cases Two", href: "/cases-2" },
+  //     { id: 3, name: "Case Details", href: "/case-details" },
+  //   ],
+  // },
   {
     id: 5,
-    name: "Blog",
+    name: "Insights",
     href: "/blog",
-    subNavItems: [
-      { id: 1, name: "Blog Posts", href: "/blog" },
-      { id: 2, name: "Blog Two", href: "/blog-2" },
-      {
-        id: 3,
-        name: "Blog Sidebar",
-        href: "/blog-sidebar",
-        subItems: [
-          { id: 1, name: "Blog Right Sidebar", href: "/blog-sidebar" },
-          { id: 2, name: "Blog Left Sidebar", href: "/blog-sidebar-right" },
-        ],
-      },
-      { id: 4, name: "Blog Details", href: "/blog-details" },
-    ],
+    // subNavItems: [
+    //   { id: 1, name: "Blog Posts", href: "/blog" },
+    //   { id: 2, name: "Blog Two", href: "/blog-2" },
+    //   {
+    //     id: 3,
+    //     name: "Blog Sidebar",
+    //     href: "/blog-sidebar",
+    //     subItems: [
+    //       { id: 1, name: "Blog Right Sidebar", href: "/blog-sidebar" },
+    //       { id: 2, name: "Blog Left Sidebar", href: "/blog-sidebar-right" },
+    //     ],
+    //   },
+    //   { id: 4, name: "Blog Details", href: "/blog-details" },
+    // ],
   },
   {
     id: 6,
@@ -210,34 +213,45 @@ export const navItems = [
 
 const socials = [
   {
-    id: 1,
+    id: 5,
+    icon: "fab fa-linkedin",
+    href: "https://www.linkedin.com/company/mensk-consultancy-llc/",
+  },
+  {
+    id: 7,
     icon: "fab fa-twitter",
-    href: "#",
+    href: "https://www.linkedin.com/company/mensk-consultancy-llc/",
   },
+  
   {
-    id: 2,
-    icon: "fab fa-facebook-square",
-    href: "#",
+    id: 6,
+    icon: "fab fa-whatsapp",
+    href: "https://wa.me/971501234567",
   },
-  {
-    id: 3,
-    icon: "fab fa-pinterest-p",
-    href: "#",
-  },
-  {
-    id: 4,
-    icon: "fab fa-instagram",
-    href: "#",
-  },
+  // {
+  //   id: 2,
+  //   icon: "fab fa-facebook-square",
+  //   href: "#",
+  // },
+  // {
+  //   id: 3,
+  //   icon: "fab fa-pinterest-p",
+  //   href: "#",
+  // },
+  // {
+  //   id: 4,
+  //   icon: "fab fa-instagram",
+  //   href: "#",
+  // },
 ];
 
 const headerData = {
   logo,
   navItems,
   callText: "Need help? Talk to an expert",
-  phone: "+1- ( 246 ) 333 - 0079",
-  phoneHref: "12463330079",
-  email: "needhelp@oslim.com",
+  phone: "+97-1529056309",
+  phoneHref: "971529056309",
+  email: "info@menskconsultancy.com",
   socials,
 };
 

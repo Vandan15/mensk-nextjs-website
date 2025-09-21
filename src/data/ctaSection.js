@@ -1,4 +1,4 @@
 export const ctaOne = {
-  title: "We’re delivering the best \n customer experience",
-  href: "/about",
+  title: "Begin Your Distinct UAE Journey Today",
+  href: "/contact",
 };

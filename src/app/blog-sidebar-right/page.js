@@ -4,7 +4,7 @@ import NewsSidebar from "@/components/NewsSection/NewsSidebar";
 import PageHeader from "@/components/Reuseable/PageHeader";
 
 export const metadata = {
-  title: "Blog Right Sidebar - Oslim NextJS Template",
+  title: "Blog Right Sidebar | Mensk Consultancy",
   description: "Blog Right Sidebar page of Oslim NextJS Template For Business",
 };
 

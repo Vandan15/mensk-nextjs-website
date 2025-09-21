@@ -7,7 +7,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Title from "../Reuseable/Title";
 import ContactForm from "./ContactForm";
 
-const { bg, tagline, title, text, timeRange, inputs, bottomTitle, contacts } =
+const { bg, tagline, title, text, officeInfo, inputs, bottomTitle, contacts } =
   contactOne;
 
 const ContactOne = ({ id = "" }) => {
@@ -26,9 +26,23 @@ const ContactOne = ({ id = "" }) => {
               <div className="contact-one__top-left">
                 <Title title={title} tagline={tagline} className="text-left" />
                 <p className="contact-one__text">{text}</p>
-                <div className="contact-one__timings">
-                  <h5 className="contact-one__timings-title">Timings</h5>
-                  <p className="contact-one__timings__text">{timeRange}</p>
+                <div className="contact-one__office-info">
+                  {officeInfo && Object.entries(officeInfo).map(([key, info]) => (
+                    <div key={key} className="contact-one__info-item">
+                      <h5 className="contact-one__info-title">{info.title}</h5>
+                      {key === 'phone' ? (
+                        <a href={`tel:${info.text.replace(/\s+/g, '')}`} className="contact-one__info-text contact-one__info-link">
+                          {info.text}
+                        </a>
+                      ) : key === 'email' ? (
+                        <a href={`mailto:${info.text}`} className="contact-one__info-text contact-one__info-link">
+                          {info.text}
+                        </a>
+                      ) : (
+                        <p className="contact-one__info-text">{info.text}</p>
+                      )}
+                    </div>
+                  ))}
                 </div>
               </div>
             </Col>
@@ -46,7 +60,7 @@ const ContactOne = ({ id = "" }) => {
             </Col>
           </Row>
         </div>
-        <div className="contact-one__bottom">
+        {/* <div className="contact-one__bottom">
           <h2 className="contact-one__bottom-title">{bottomTitle}</h2>
           <Row>
             {contacts.map(({ id, title, text, email, phone, phoneHref }) => (
@@ -66,7 +80,7 @@ const ContactOne = ({ id = "" }) => {
               </Col>
             ))}
           </Row>
-        </div>
+        </div> */}
       </Container>
     </section>
   );

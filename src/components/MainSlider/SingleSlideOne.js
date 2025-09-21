@@ -6,7 +6,7 @@ import Link from "../Reuseable/Link";
 import TextSplit from "../Reuseable/TextSplit";
 
 const SingleSlideOne = ({ slider = {}, showShape = false }) => {
-  const { bg, title, href } = slider;
+  const { bg, title, subtitle, href } = slider;
 
   return (
     <>
@@ -34,8 +34,9 @@ const SingleSlideOne = ({ slider = {}, showShape = false }) => {
               <h2>
                 <TextSplit text={title} />
               </h2>
+              <p className="text-description">{subtitle}</p>
               <Link href={href} className="thm-btn">
-                Discover More
+              Claim Your Free UAE Strategy Session
               </Link>
             </div>
           </Col>

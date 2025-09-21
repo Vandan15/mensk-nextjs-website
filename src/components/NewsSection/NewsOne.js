@@ -1,13 +1,14 @@
 "use client";
 
-import { newsOne } from "@/data/newsSection";
+import { newsOne, blogDetailsData } from "@/data/newsSection";
 import useActive from "@/hooks/useActive";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Title from "../Reuseable/Title";
 import SingleNewsOne from "./SingleNewsOne";
+import Link from "next/link";
 
-const { tagline, title, newsData } = newsOne;
+const { tagline, title } = newsOne;
 
 const NewsOne = ({
   className = "news-one",
@@ -31,7 +32,7 @@ const NewsOne = ({
           <Title title={title} tagline={tagline} className="text-center" />
         )}
         <Row>
-          {newsData.slice(0, !hideTitle ? 3 : undefined).map((news) => (
+          {Object.values(blogDetailsData).slice(0, !hideTitle ? 3 : undefined).map((news) => (
             <Col
               xl={4}
               lg={hideTitle ? 6 : 4}
@@ -43,6 +44,17 @@ const NewsOne = ({
             </Col>
           ))}
         </Row>
+        {!hideTitle && (
+          <Row>
+            <Col xl={12} className="text-center">
+              <div className="news-one__cta">
+                <Link href="/blog" className="thm-btn">
+                  Access All Insights
+                </Link>
+              </div>
+            </Col>
+          </Row>
+        )}
         {children}
       </Container>
     </section>

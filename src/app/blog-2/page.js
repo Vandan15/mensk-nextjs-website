@@ -4,7 +4,7 @@ import NewsPageCarousel from "@/components/NewsSection/NewsPageCarousel";
 import PageHeader from "@/components/Reuseable/PageHeader";
 
 export const metadata = {
-  title: "Blog Carousel - Oslim NextJS Template",
+  title: "Blog Carousel | Mensk Consultancy",
   description: "Blog Carousel page of Oslim NextJS Template For Business",
 };
 

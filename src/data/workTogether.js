@@ -8,9 +8,12 @@ export const workTogether = {
   shape,
   image1,
   image2,
-  tagline: "get to know us",
-  title: "Work Together for your Business",
-  text: "Lorem ipsum dolor sit amet, consectetur nod adipisicing elit sed do eiusmod tempor incididunt ut siply free text ois labore et dolore magna aliqua lonm andhn.",
+  // tagline: "get to know us",
+  title: "Company Incorporation",
+  subHeader:
+    "Start your UAE story. Your company incorporation made effortless.",
+  text: `
+From sole proprietorship to multinational subsidiaries, we handle the complexities while you focus on growth. Every license application includes our compliance guarantee and lifetime advisory support.`,
   points: [
     "Nsectetur cing elit.",
     "Suspe ndisse suscipit sagittis leo.",
@@ -19,6 +22,7 @@ export const workTogether = {
   ],
   parsonImage,
   personName: "Kevin Martin",
+  cta: "Get Incorporation Quote",
 };
 
 export const workTogetherTwo = {
@@ -29,4 +33,5 @@ export const workTogetherTwo = {
   text: "Suspendisse vel iaculis leo. Curabitur scelerisque mi porta justo nulla lonm ise fermentum porta.",
   text2:
     "Lorem ipsum dolor sit amet, consectetur nod adipisicing elit sed do eiusmod tempor incididunt ut siply free text ois labore et dolore magna aliqua lonm andhn.",
+  cta: "Book Legal Consultation",
 };

@@ -11,7 +11,7 @@ import TestimonialOne from "@/components/TestimonialSection/TestimonialOne";
 import WorkTogetherTwo from "@/components/WorkTogether/WorkTogetherTwo";
 
 export const metadata = {
-  title: "About - Oslim NextJS Template",
+  title: "About | Mensk Consultancy",
   description: "About page of Oslim NextJS Template For Business",
 };
 

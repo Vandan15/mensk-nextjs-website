@@ -3,6 +3,7 @@ import CaseOne from "@/components/CaseSection/CaseOne";
 import CtaOne from "@/components/CtaSection/CtaOne";
 import FreeConsultation from "@/components/FreeConsultation/FreeConsultation";
 import Header from "@/components/Header/Header";
+import HowWeWorks from "@/components/HowWeWorks/HowWeWorks";
 import Layout from "@/components/Layout/Layout";
 import MainSlider from "@/components/MainSlider/MainSlider";
 import NewsOne from "@/components/NewsSection/NewsOne";
@@ -11,11 +12,12 @@ import TeamOne from "@/components/TeamSection/TeamOne";
 import TestimonialOne from "@/components/TestimonialSection/TestimonialOne";
 import TrustedOne from "@/components/TrustedSection/TrustedOne";
 import WelcomeOne from "@/components/WelcomeSection/WelcomeOne";
+import WhyChooseOne from "@/components/WhyChoose/WhyChooseOne";
 import WorkTogether from "@/components/WorkTogether/WorkTogether";
 import { mainSlider } from "@/data/mainSlider";
 
 export const metadata = {
-  title: "Home One - Oslim NextJS Template",
+  title: "Home One | Mensk Consultancy",
   description: "Home page of Oslim NextJS Template For Business",
 };
 
@@ -24,15 +26,17 @@ export default function Home() {
     <Layout pageTitle="Home One">
       <Header />
       <MainSlider sliders={mainSlider} showShape />
-      <WelcomeOne />
+      {/* <WelcomeOne /> */}
       <WorkTogether />
-      <CaseOne />
-      <BenefitsOne />
+      {/* <CaseOne /> */}
+      {/* <BenefitsOne /> */}
       <FreeConsultation />
-      <OurMission />
+      <WhyChooseOne />
+      {/* <OurMission /> */}
       <TeamOne />
-      <TestimonialOne />
-      <TrustedOne />
+      {/* <TestimonialOne /> */}
+      {/* <TrustedOne /> */}
+      <HowWeWorks/>
       <NewsOne showShape />
       <CtaOne />
     </Layout>
