@@ -24,7 +24,7 @@ import "@/styles/blog-content.css";
 // });
 
 export const metadata = {
-  title: "No.1 law &amp; Commerce Consultancy Firm in UAE | Mensk Consultancy",
+  title: "No.1 law & Commerce Consultancy Firm in UAE | Mensk Consultancy",
   description: "Elevate your business strategy with MENSK Consultancy&#039;s specialized services in Marketing, HR, Management, and AI consultancy.",
   icons: {
     icon: [
