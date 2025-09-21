@@ -14,19 +14,7 @@ const SingleNewsOne = ({ news = {} }) => {
       <div className="news-one__img">
         <Image src={typeof image === 'string' ? require(`@/images/blog/${image}`).default.src : image.src} alt={title} />
         <Link href={blogUrl}>
-          <i className="fas fa-arrow-right" style={{
-            fontSize: '18px',
-            color: '#fff',
-            backgroundColor: '#007bff',
-            padding: '12px',
-            borderRadius: '50%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            width: '42px',
-            height: '42px',
-            transition: 'all 0.3s ease'
-          }}></i>
+          <i className="fas fa-arrow-right"></i>
         </Link>
       </div>
       <div className="news-one__content">

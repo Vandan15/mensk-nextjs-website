@@ -8,7 +8,7 @@ import Title from "../Reuseable/Title";
 import SingleNewsOne from "./SingleNewsOne";
 import Link from "next/link";
 
-const { tagline, title, newsData } = newsOne;
+const { tagline, title } = newsOne;
 
 const NewsOne = ({
   className = "news-one",

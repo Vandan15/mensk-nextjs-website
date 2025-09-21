@@ -15,6 +15,7 @@ import "tiny-slider/dist/tiny-slider.css";
 // extra css
 import "@/styles/style.css";
 import "@/styles/responsive.css";
+import "@/styles/blog-content.css";
 
 // const catamaran = Catamaran({
 //   subsets: ["latin"],
