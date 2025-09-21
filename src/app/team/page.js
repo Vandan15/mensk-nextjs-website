@@ -5,7 +5,7 @@ import PageHeader from "@/components/Reuseable/PageHeader";
 import TeamPage from "@/components/TeamSection/TeamPage";
 
 export const metadata = {
-  title: "Team - Oslim NextJS Template",
+  title: "Team | Mensk Consultancy",
   description: "Team page of Oslim NextJS Template For Business",
 };
 

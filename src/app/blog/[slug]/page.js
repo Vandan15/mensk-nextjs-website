@@ -25,7 +25,7 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: `${blogDetails.title} - Oslim NextJS Template`,
+    title: `${blogDetails.title} | Mensk Consultancy`,
     description: blogDetails.text.substring(0, 160) + "...",
   };
 }

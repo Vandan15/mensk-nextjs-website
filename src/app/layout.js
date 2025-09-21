@@ -24,8 +24,8 @@ import "@/styles/blog-content.css";
 // });
 
 export const metadata = {
-  title: "Oslim NextJS Template For Business",
-  description: "Oslim NextJS Template For Business",
+  title: "No.1 law &amp; Commerce Consultancy Firm in UAE | Mensk Consultancy",
+  description: "Elevate your business strategy with MENSK Consultancy&#039;s specialized services in Marketing, HR, Management, and AI consultancy.",
   icons: {
     icon: [
       { url: "/favicon.ico" },

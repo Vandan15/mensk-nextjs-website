@@ -5,7 +5,7 @@ import NewsOne from "@/components/NewsSection/NewsOne";
 import PageHeader from "@/components/Reuseable/PageHeader";
 
 export const metadata = {
-  title: "Blog - Oslim NextJS Template",
+  title: "Blog | Mensk Consultancy",
   description: "Blog page of Oslim NextJS Template For Business",
 };
 
@@ -13,7 +13,7 @@ export default function Blog() {
   return (
     <Layout pageTitle="Blog" footerClassName="site-footer-three">
       <Header />
-      <PageHeader page="Blog" title="Blog Posts" />
+      <PageHeader page="Blog" title="Stay Informed. Stay Ahead. UAE Market Insights." />
       <NewsOne className="news-page" hideTitle>
         {/* <BlogPagination /> */}
       </NewsOne>

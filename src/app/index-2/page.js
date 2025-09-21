@@ -17,7 +17,7 @@ import WhyChooseOne from "@/components/WhyChoose/WhyChooseOne";
 import { mainSliderTwo } from "@/data/mainSlider";
 
 export const metadata = {
-  title: "Home Two - Oslim NextJS Template",
+  title: "Home Two | Mensk Consultancy",
   description: "Home page variant 2 of Oslim NextJS Template For Business",
 };
 

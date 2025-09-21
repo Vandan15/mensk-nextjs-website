@@ -5,7 +5,7 @@ import Layout from "@/components/Layout/Layout";
 import PageHeader from "@/components/Reuseable/PageHeader";
 
 export const metadata = {
-  title: "Case Details - Oslim NextJS Template",
+  title: "Case Details | Mensk Consultancy",
   description: "Case Details page of Oslim NextJS Template For Business",
 };
 

@@ -5,7 +5,7 @@ import PageHeader from "@/components/Reuseable/PageHeader";
 import TeamPageCarousel from "@/components/TeamSection/TeamPageCarousel";
 
 export const metadata = {
-  title: "Team Carousel - Oslim NextJS Template",
+  title: "Team Carousel | Mensk Consultancy",
   description: "Team Carousel page of Oslim NextJS Template For Business",
 };
 

@@ -4,7 +4,7 @@ import Layout from "@/components/Layout/Layout";
 import PageHeader from "@/components/Reuseable/PageHeader";
 
 export const metadata = {
-  title: "404 Error - Oslim NextJS Template",
+  title: "404 Error | Mensk Consultancy",
   description: "404 Error page - Page not found",
 };
 

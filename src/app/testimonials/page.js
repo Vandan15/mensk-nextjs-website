@@ -5,7 +5,7 @@ import PageHeader from "@/components/Reuseable/PageHeader";
 import TestimonialsPage from "@/components/TestimonialSection/TestimonialsPage";
 
 export const metadata = {
-  title: "Testimonials - Oslim NextJS Template",
+  title: "Testimonials | Mensk Consultancy",
   description: "Testimonials page of Oslim NextJS Template For Business",
 };
 

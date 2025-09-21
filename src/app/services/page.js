@@ -4,7 +4,7 @@ import PageHeader from "@/components/Reuseable/PageHeader";
 import ServicesOne from "@/components/ServicesSection/ServicesOne";
 
 export const metadata = {
-  title: "Services - Oslim NextJS Template",
+  title: "Services | Mensk Consultancy",
   description: "Services page of Oslim NextJS Template For Business",
 };
 

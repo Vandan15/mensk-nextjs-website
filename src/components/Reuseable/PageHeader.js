@@ -13,15 +13,15 @@ const PageHeader = ({
 }) => {
   return (
     <section className="page-header">
-      <div
+      {/* <div
         className="page-header-bg"
         style={{ backgroundImage: `url(${bg.src})` }}
-      ></div>
+      ></div> */}
       <div className="page-header-shape-1 float-bob-x-6"></div>
       <div className="page-header-shape-2 float-bob-x-7"></div>
       <Container>
         <div className="page-header__inner">
-          <ul className="thm-breadcrumb list-unstyled">
+          {/* <ul className="thm-breadcrumb list-unstyled">
             <li>
               <Link href="/">Home</Link>
             </li>{" "}
@@ -39,7 +39,7 @@ const PageHeader = ({
               </>
             )}
             <li>{page || title}</li>
-          </ul>
+          </ul> */}
           <h2>{title}</h2>
         </div>
       </Container>

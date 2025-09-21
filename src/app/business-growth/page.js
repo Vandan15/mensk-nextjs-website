@@ -8,7 +8,7 @@ import { businessGrowth } from "@/data/servicesSection";
 const { title } = businessGrowth;
 
 export const metadata = {
-  title: `${title} - Oslim NextJS Template`,
+  title: `${title} | Mensk Consultancy`,
   description: `${title} service page of Oslim NextJS Template For Business`,
 };
 

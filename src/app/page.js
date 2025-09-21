@@ -17,7 +17,7 @@ import WorkTogether from "@/components/WorkTogether/WorkTogether";
 import { mainSlider } from "@/data/mainSlider";
 
 export const metadata = {
-  title: "Home One - Oslim NextJS Template",
+  title: "Home One | Mensk Consultancy",
   description: "Home page of Oslim NextJS Template For Business",
 };
 
