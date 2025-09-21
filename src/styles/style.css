@@ -7646,12 +7646,14 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .news-details__img {
   position: relative;
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 
 .news-details__img img {
   width: 100%;
   border-radius: var(--oslim-bdr-radius);
+  max-width: 600px;
 }
 
 .news-details__content {

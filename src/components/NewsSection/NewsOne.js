@@ -1,6 +1,6 @@
 "use client";
 
-import { newsOne } from "@/data/newsSection";
+import { newsOne, blogDetailsData } from "@/data/newsSection";
 import useActive from "@/hooks/useActive";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
@@ -32,7 +32,7 @@ const NewsOne = ({
           <Title title={title} tagline={tagline} className="text-center" />
         )}
         <Row>
-          {newsData.slice(0, !hideTitle ? 3 : undefined).map((news) => (
+          {Object.values(blogDetailsData).slice(0, !hideTitle ? 3 : undefined).map((news) => (
             <Col
               xl={4}
               lg={hideTitle ? 6 : 4}

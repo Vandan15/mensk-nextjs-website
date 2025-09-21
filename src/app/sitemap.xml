@@ -5,4 +5,22 @@
     <changefreq>yearly</changefreq>
     <priority>1</priority>
   </url>
+  <url>
+    <loc>https://menskconsultancy.com/blog/the-role-of-consultants-in-project-development-and-execution</loc>
+    <lastmod>2025-04-30T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://menskconsultancy.com/blog/how-to-identify-profitable-business-opportunities-with-market-research</loc>
+    <lastmod>2025-04-29T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://menskconsultancy.com/blog/trends-in-market-research-that-will-dominate-2025</loc>
+    <lastmod>2025-04-29T00:00:00.000Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
