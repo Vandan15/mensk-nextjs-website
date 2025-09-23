@@ -1,5 +1,7 @@
 import BenefitsOne from "@/components/Benefits/BenefitsOne";
 import CaseOne from "@/components/CaseSection/CaseOne";
+import ContactForm from "@/components/Contact/ContactForm";
+import ContactOne from "@/components/Contact/ContactOne";
 import CtaOne from "@/components/CtaSection/CtaOne";
 import FreeConsultation from "@/components/FreeConsultation/FreeConsultation";
 import Header from "@/components/Header/Header";
@@ -38,6 +40,7 @@ export default function Home() {
       {/* <TrustedOne /> */}
       <HowWeWorks/>
       <NewsOne showShape />
+      <ContactOne isTitleTwo showOnlyForm/>
       <CtaOne />
     </Layout>
   );

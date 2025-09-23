@@ -28,7 +28,7 @@ const ContactForm = ({
     >
       <Row>
         {inputs.map(({ name, placeholder, type, required }) => (
-          <Col key={name} xl={6}>
+          <Col key={name} xl={6} className="mb-4">
             <div className={inputClassName}>
               <input
                 type={type}

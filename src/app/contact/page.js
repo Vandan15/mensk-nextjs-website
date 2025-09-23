@@ -15,10 +15,10 @@ export default function Contact() {
   return (
     <Layout pageTitle="Contact">
       <Header />
-      <PageHeader title="Contact" />
+      <PageHeader title="Begin Your Distinct UAE Journey Today" page="Contact us" />
       {/* <ContactDetails /> */}
       {/* <div className="mb-5"> */}
-      <ContactOne isTitleTwo />
+      <ContactOne isTitleTwo  />
       {/* </div> */}
       {/* <CtaOne /> */}
     </Layout>

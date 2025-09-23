@@ -35,8 +35,8 @@ const common = {
 
 export const contactOne = {
   bg,
-  tagline: "contact with us",
-  title: "Begin Your Distinct UAE Journey Today",
+  // tagline: "contact with us",
+  // title: "Begin Your Distinct UAE Journey Today",
   // text: "Pellentesque ultricies quam dui, id portt tor leo \n iaculis nec. Phasellus ac neque.",
   officeInfo: {
     address: {

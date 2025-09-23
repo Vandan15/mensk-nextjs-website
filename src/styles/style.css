@@ -4072,7 +4072,7 @@ input[type="search"]::-webkit-search-results-decoration {
   background-color: var(--oslim-base);
   overflow: hidden;
   padding: 94px 0;
-  padding-left: 120px;
+  padding-inline: 60px;
   border-radius: var(--oslim-bdr-radius);
 }
 
@@ -6692,7 +6692,7 @@ input[type="search"]::-webkit-search-results-decoration {
   position: relative;
   display: block;
   background-color: var(--oslim-black);
-  padding: 120px 0 0px;
+  padding: 60px 0 0px;
   z-index: 1;
 }
 
@@ -6713,7 +6713,7 @@ input[type="search"]::-webkit-search-results-decoration {
   position: relative;
   display: block;
   border-bottom: 1px solid #30303b;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
 }
 
 .contact-one__top-left {
@@ -6829,7 +6829,7 @@ input[type="search"]::-webkit-search-results-decoration {
   border: none;
   outline: none;
   padding: 0 30px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   background-color: #0a090f;
   border-radius: var(--oslim-bdr-radius);
 }
