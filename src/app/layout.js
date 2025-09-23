@@ -45,7 +45,7 @@ export const metadata = {
     siteName: "Mensk Consultancy",
     images: [
       {
-        url: "/assets/images/og/og-mensk.webp",
+        url: "/assets/images/og/og-mensk.jpg",
         width: 1200,
         height: 630,
         alt: "Mensk Consultancy - UAE Business Consultancy Firm",
@@ -58,7 +58,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "No.1 law & Commerce Consultancy Firm in UAE | Mensk Consultancy",
     description: "Elevate your business strategy with MENSK Consultancy's specialized services in Marketing, HR, Management, and AI consultancy.",
-    images: ["/assets/images/og/og-mensk.webp"],
+    images: ["/assets/images/og/og-mensk.png"],
   },
   viewport: {
     width: "device-width",
