@@ -6802,6 +6802,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .contact-one__top-right {
   position: relative;
   display: block;
+  min-height: 700px;
 }
 
 .contact-one__form {
@@ -6855,6 +6856,37 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .contact-form__btn::after {
   background-color: var(--oslim-white);
+}
+
+.contact-form__input-btn-box {
+  margin-top: 20px;
+  display: block;
+}
+
+.contact-form__btn {
+  display: inline-block;
+  min-width: 150px;
+}
+
+.contact-form__btn:disabled {
+  cursor: not-allowed;
+}
+
+.contact-form__btn.loading {
+  background-color: #6c757d;
+  cursor: wait;
+}
+
+.contact-form__btn.success {
+  background-color: #28a745;
+  cursor: not-allowed;
+}
+
+.contact-form__error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
 }
 
 .contact-one__bottom {
