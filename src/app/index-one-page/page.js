@@ -11,7 +11,7 @@ import TeamOne from "@/components/TeamSection/TeamOne";
 import TestimonialOne from "@/components/TestimonialSection/TestimonialOne";
 import TrustedOne from "@/components/TrustedSection/TrustedOne";
 import WelcomeOne from "@/components/WelcomeSection/WelcomeOne";
-import WorkTogether from "@/components/WorkTogether/WorkTogether";
+import WorkTogether from "@/components/WorkTogether/Services";
 import { onePageNavItems } from "@/data/headerData";
 import { mainSlider } from "@/data/mainSlider";
 

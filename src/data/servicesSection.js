@@ -4,60 +4,68 @@ import image6 from "@/images/services/service-details-img-3.jpg";
 import image4 from "@/images/services/service-details-img-4.jpg";
 import image2 from "@/images/services/service-details-img-5.jpg";
 import image5 from "@/images/services/service-details-img-6.jpg";
+
+// Service specific images
+import companyIncorporationImg from "@/images/services/company-incorporation.jpg";
+import trademarksImg from "@/images/services/trademarks.jpg";
+import willsImg from "@/images/services/will.jpg";
+import realEstateImg from "@/images/services/real-estate.jpg";
+import legalImg from "@/images/services/legal.jpg";
+import wealthManagementImg from "@/images/services/wealth-management.jpg";
 import { faqs } from "./fAQsPage";
 import { servicesSubNavItems } from "./headerData";
 
 export const servicesOne = {
-  tagline: "Our Services",
-  title: "Services We Offer",
+  tagline: "Our Core Services",
+  title: "Your Single Gateway to UAE Excellence",
   services: [
     {
       id: 1,
-      title: "Consumer \n Product",
-      image: "services-1-1.jpg",
-      icon: "icon-creative",
-      href: "/consumer-product",
-      text: "Lorem ipsum dolor sit donec amet tristique ante vel sem dictum is rhoncus elit sed.",
+      title: "Company Incorporation",
+      image: companyIncorporationImg,
+      // icon: "icon-creative", // Company/Business related icon
+      href: "/company-incorporation",
+      text: "Start your UAE story. Your company incorporation made effortless. 21-day incorporation guarantee with all government approvals included.",
     },
     {
       id: 2,
-      title: "Banking \n Advising",
-      image: "services-1-2.jpg",
-      icon: "icon-business",
-      href: "/banking-advising",
-      text: "Lorem ipsum dolor sit donec amet tristique ante vel sem dictum is rhoncus elit sed.",
+      title: "Trademarks",
+      image: trademarksImg,
+      // icon: "icon-business", // Trademark/Brand protection icon
+      href: "/trademarks",
+      text: "Put your name on the map, and keep it yours. Intellectual property protection across UAE and GCC markets.",
     },
     {
       id: 3,
-      title: "Marketing \n Rules",
-      image: "services-1-3.jpg",
-      icon: "icon-global",
-      href: "/marketing-rules",
-      text: "Lorem ipsum dolor sit donec amet tristique ante vel sem dictum is rhoncus elit sed.",
+      title: "Wills",
+      image: willsImg,
+      // icon: "icon-global", // Legal document/Will icon
+      href: "/wills",
+      text: "Give your loved ones the certainty and security they deserve. DIFC Courts registered wills for expatriate families.",
     },
     {
       id: 4,
-      title: "Business \n Growth",
-      image: "services-1-4.jpg",
-      icon: "icon-mobile-analytics",
-      href: "/business-growth",
-      text: "Lorem ipsum dolor sit donec amet tristique ante vel sem dictum is rhoncus elit sed.",
+      title: "Real Estate",
+      image: realEstateImg,
+      // icon: "icon-mobile-analytics", // Property/Real estate icon
+      href: "/real-estate",
+      text: "Strategic Real Estate Solutions. Finance your UAE property deals with ease and expert guidance.",
     },
     {
       id: 5,
-      title: "Audit \n Marketing",
-      image: "services-1-5.jpg",
-      icon: "icon-analysis",
-      href: "audit-marketing",
-      text: "Lorem ipsum dolor sit donec amet tristique ante vel sem dictum is rhoncus elit sed.",
+      title: "Legal Advisory",
+      image: legalImg,
+      // icon: "icon-analysis", // Legal/Advisory icon
+      href: "/legal-advisory",
+      text: "Make every decision in the UAE with confident legal advisory at your side. Contract drafting and regulatory compliance.",
     },
     {
       id: 6,
-      title: "Financial \n Advice",
-      image: "services-1-6.jpg",
-      icon: "icon-creative-1",
-      href: "/financial-advice",
-      text: "Lorem ipsum dolor sit donec amet tristique ante vel sem dictum is rhoncus elit sed.",
+      title: "Wealth Management",
+      image: wealthManagementImg,
+      // icon: "icon-creative-1", // Wealth/Financial management icon
+      href: "/wealth-management",
+      text: "Make the most of what you've built, and watch it flourish. Strategic wealth preservation and growth for expatriate families.",
     },
   ],
 };

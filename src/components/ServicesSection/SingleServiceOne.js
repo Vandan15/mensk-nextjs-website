@@ -11,13 +11,13 @@ const SingleServiceOne = ({ service = {} }) => {
   return (
     <div className="services-one__single">
       <div className="services-one__img">
-        <Image src={require(`@/images/services/${image}`).default.src} alt="" />
+        <Image src={typeof image === 'string' ? require(`@/images/services/${image}`).default.src : image.src} alt="" />
       </div>
       <div className="services-one__content">
         <div className="services-one__title-box">
-          <div className="services-one__title-icon">
+          {/* <div className="services-one__title-icon">
             <span className={icon}></span>
-          </div>
+          </div> */}
           <h3 className="services-one__title">
             <Link href={href}>
               <TextSplit text={title} />

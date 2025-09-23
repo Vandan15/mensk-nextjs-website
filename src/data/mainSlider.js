@@ -8,13 +8,13 @@ export const mainSlider = [
     subtitle: "Business, legal and legacy, handled with finesse by one sophisticated alliance.",
     href: "/contact",
   },
-  {
-    id: 2,
-    bg: "main-slider-1-2.jpg",
-    title: "Your Golden Ticket to Strategic UAE Success",
-    subtitle: "Business, legal and legacy, handled with finesse by one sophisticated alliance.",
-    href: "/contact",
-  },
+  // {
+  //   id: 2,
+  //   bg: "main-slider-1-2.jpg",
+  //   title: "Your Golden Ticket to Strategic UAE Success",
+  //   subtitle: "Business, legal and legacy, handled with finesse by one sophisticated alliance.",
+  //   href: "/contact",
+  // },
   // {
   //   id: 3,
   //   bg: "main-slider-1-3.jpg",
