@@ -1699,7 +1699,7 @@ input[type="search"]::-webkit-search-results-decoration {
   transform: scale(1);
   opacity: 0.3;
   background-color: var(--oslim-black);
-  background-blend-mode: luminosity;
+  /* background-blend-mode: luminosity; */
   transition: transform 7000ms ease, opacity 1500ms ease-in;
   z-index: 1;
 }
@@ -1709,7 +1709,8 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .main-slider .swiper-slide-active .image-layer {
-  opacity: 0.4;
+  /* opacity: 0.4; */
+  opacity: 0.5;
 }
 
 .main-slider-shape-1 {
@@ -4072,7 +4073,7 @@ input[type="search"]::-webkit-search-results-decoration {
   background-color: var(--oslim-base);
   overflow: hidden;
   padding: 94px 0;
-  padding-left: 120px;
+  padding-inline: 60px;
   border-radius: var(--oslim-bdr-radius);
 }
 
@@ -5023,7 +5024,7 @@ input[type="search"]::-webkit-search-results-decoration {
   font-size: 26px;
   font-weight: 800;
   line-height: 31px;
-  margin-left: 60px;
+  /* margin-left: 60px; */
 }
 
 .services-one__title a {
@@ -6692,7 +6693,7 @@ input[type="search"]::-webkit-search-results-decoration {
   position: relative;
   display: block;
   background-color: var(--oslim-black);
-  padding: 120px 0 0px;
+  padding: 60px 0 0px;
   z-index: 1;
 }
 
@@ -6713,7 +6714,7 @@ input[type="search"]::-webkit-search-results-decoration {
   position: relative;
   display: block;
   border-bottom: 1px solid #30303b;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
 }
 
 .contact-one__top-left {
@@ -6802,6 +6803,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .contact-one__top-right {
   position: relative;
   display: block;
+  min-height: 700px;
 }
 
 .contact-one__form {
@@ -6829,7 +6831,7 @@ input[type="search"]::-webkit-search-results-decoration {
   border: none;
   outline: none;
   padding: 0 30px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   background-color: #0a090f;
   border-radius: var(--oslim-bdr-radius);
 }
@@ -6855,6 +6857,37 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .contact-form__btn::after {
   background-color: var(--oslim-white);
+}
+
+.contact-form__input-btn-box {
+  margin-top: 20px;
+  display: block;
+}
+
+.contact-form__btn {
+  display: inline-block;
+  min-width: 150px;
+}
+
+.contact-form__btn:disabled {
+  cursor: not-allowed;
+}
+
+.contact-form__btn.loading {
+  background-color: #6c757d;
+  cursor: wait;
+}
+
+.contact-form__btn.success {
+  background-color: #28a745;
+  cursor: not-allowed;
+}
+
+.contact-form__error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
 }
 
 .contact-one__bottom {

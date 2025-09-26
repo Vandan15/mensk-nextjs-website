@@ -19,7 +19,7 @@ import legalImg from "@/images/services/legal.jpg";
 import wealthManagementImg from "@/images/services/wealth-management.jpg";
 import Link from "next/link";
 
-const WorkTogether = ({ id = "" }) => {
+const Services = ({ id = "" }) => {
   const ref = useActive(id);
 
   const workTogether = [
@@ -222,4 +222,4 @@ const WorkTogether = ({ id = "" }) => {
   );
 };
 
-export default WorkTogether;
+export default Services;

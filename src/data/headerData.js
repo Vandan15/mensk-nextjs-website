@@ -140,12 +140,12 @@ export const onePageNavItemsThree = [
 ];
 
 export const servicesSubNavItems = [
-  { id: 1, name: "Company Incorporation", href: "/services/company-incorporation" },
-  { id: 2, name: "Trademarks", href: "/services/trademarks" },
-  { id: 3, name: "Wills", href: "/services/wills" },
-  { id: 4, name: "Real Estate", href: "/services/real-estate" },
-  { id: 5, name: "Legal Advisory", href: "/services/legal-advisory" },
-  { id: 6, name: "Wealth Management", href: "/services/wealth-management" },
+  { id: 1, name: "Company Incorporation", href: "/company-incorporation" },
+  { id: 2, name: "Trademarks", href: "/trademarks" },
+  { id: 3, name: "Wills", href: "/wills" },
+  { id: 4, name: "Real Estate", href: "/real-estate" },
+  { id: 5, name: "Legal Advisory", href: "/legal-advisory" },
+  { id: 6, name: "Wealth Management", href: "/wealth-management" },
 ];
 
 export const navItems = [
