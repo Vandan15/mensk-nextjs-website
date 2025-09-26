@@ -15,9 +15,8 @@ import TestimonialOne from "@/components/TestimonialSection/TestimonialOne";
 import TrustedOne from "@/components/TrustedSection/TrustedOne";
 import WelcomeOne from "@/components/WelcomeSection/WelcomeOne";
 import WhyChooseOne from "@/components/WhyChoose/WhyChooseOne";
-import WorkTogether from "@/components/WorkTogether/Services";
+import Services from "@/components/WorkTogether/Services";
 import { mainSlider } from "@/data/mainSlider";
-import Services from "./services/page";
 
 // export const metadata = {
 //   title: "Home One | Mensk Consultancy",
