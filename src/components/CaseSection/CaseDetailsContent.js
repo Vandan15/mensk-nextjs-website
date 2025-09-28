@@ -17,14 +17,14 @@ const CaseDetailsContent = ({
         <Col xl={8} lg={7}>
           <div className="case-details__content-left">
             <h3 className="case-details__content-title">{title}</h3>
-            <p className="case-details__content-text-1">{text1}</p>
-            <p className="case-details__content-text-2">{text2}</p>
-            <p className="case-details__content-text-3">{text3}</p>
+            {text1 && <p className="case-details__content-text-1">{text1}</p>}
+            {text2 && <p className="case-details__content-text-2">{text2}</p>}
+            {text3 && <p className="case-details__content-text-3">{text3}</p>}
           </div>
         </Col>
         <Col xl={4} lg={5}>
           <div className="case-details__content-right">
-            <p className="case-details__content-text-4">{text4}</p>
+            {text4 && <p className="case-details__content-text-4">{text4}</p>}
             <ul className="list-unstyled case-details__content-points">
               {points.map((point, i) => (
                 <li key={i}>

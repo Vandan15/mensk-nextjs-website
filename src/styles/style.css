@@ -8224,6 +8224,7 @@ input[type="search"]::-webkit-search-results-decoration {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  flex-shrink: 0;
 }
 
 .case-details__content-points .text {

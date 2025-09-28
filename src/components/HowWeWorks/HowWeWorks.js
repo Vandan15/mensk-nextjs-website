@@ -7,9 +7,10 @@ import Title from "../Reuseable/Title";
 import SingleHowWeWork from "./SingleHowWeWork";
 import Link from "next/link";
 
-const { tagline, title, works } = howWeWorks;
-
-const HowWeWorks = () => {
+const HowWeWorks = (props) => {
+  const {
+    data: { tagline, title, works },
+  } = props;
   return (
     <section className="how-we-works">
       <Container>
