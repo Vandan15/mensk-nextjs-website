@@ -22,11 +22,11 @@ const CaseDetailsPage = () => {
               date={date}
             />
             <CaseDetailsContent {...content} />
-            <Row>
+            {/* <Row>
               <Col xl={12}>
                 <CaseDetailsPagination />
               </Col>
-            </Row>
+            </Row> */}
           </Col>
         </Row>
       </Container>

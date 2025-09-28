@@ -17,6 +17,7 @@ import WelcomeOne from "@/components/WelcomeSection/WelcomeOne";
 import WhyChooseOne from "@/components/WhyChoose/WhyChooseOne";
 import Services from "@/components/WorkTogether/Services";
 import { mainSlider } from "@/data/mainSlider";
+import { howWeWorks } from "@/data/howWeWorks";
 
 // export const metadata = {
 //   title: "Home One | Mensk Consultancy",
@@ -38,7 +39,7 @@ export default function Home() {
       <TeamOne />
       {/* <TestimonialOne /> */}
       {/* <TrustedOne /> */}
-      <HowWeWorks/>
+      <HowWeWorks data={howWeWorks} />
       <NewsOne showShape />
       <ContactOne isTitleTwo showOnlyForm/>
       <CtaOne />

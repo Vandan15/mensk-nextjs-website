@@ -42,6 +42,7 @@ const Services = ({ id = "" }) => {
       parsonImage,
       personName: "Kevin Martin",
       cta: "Get Incorporation Quote",
+      href: "/company-incorporation",
       imageFirst: true,
     },
     {
@@ -63,6 +64,7 @@ const Services = ({ id = "" }) => {
       parsonImage,
       personName: "Kevin Martin",
       cta: "Protect Your Brand",
+      href: "/trademarks",
       imageFirst: false,
     },
     {
@@ -84,6 +86,7 @@ const Services = ({ id = "" }) => {
       parsonImage,
       personName: "Kevin Martin",
       cta: "Secure Your Will",
+      href: "/wills",
       imageFirst: true,
     },
     {
@@ -105,6 +108,7 @@ const Services = ({ id = "" }) => {
       parsonImage,
       personName: "Kevin Martin",
       cta: "Request Real Estate Advice",
+      href: "/real-estate",
       imageFirst: false,
     },
     {
@@ -126,6 +130,7 @@ const Services = ({ id = "" }) => {
       parsonImage,
       personName: "Kevin Martin",
       cta: "Book Legal Consultation",
+      href: "/legal-advisory",
       imageFirst: true,
     },
     {
@@ -147,6 +152,7 @@ const Services = ({ id = "" }) => {
       parsonImage,
       personName: "Kevin Martin",
       cta: "Plan Your Wealth Strategy",
+      href: "/wealth-management",
       imageFirst: false,
     },
     
@@ -203,7 +209,7 @@ const Services = ({ id = "" }) => {
                       </li>
                     ))}
                   </ul>
-                  <Link href={item.cta} className="thm-btn">
+                  <Link href={item.href} className="thm-btn">
                     {item.cta}
                   </Link>
                   {/* <div className="work-together__person">

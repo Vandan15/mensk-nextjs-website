@@ -2,14 +2,20 @@
 
 import React, { useState } from "react";
 
-const Faqs = ({ faqs = [], className = "" }) => {
+const Faqs = ({ faqs = [], className = "", title = "Frequently Asked Questions" }) => {
   const [current, setCurrent] = useState(1);
   const faqsLength = faqs.length;
 
   return (
-    <div
-      className={`accrodion-grp faq-one-accrodion overflow-hidden ${className}`}
-    >
+    <div className={className}>
+      {title && (
+        <div className="text-center mb-4">
+          <h2 className="section-title">{title}</h2>
+        </div>
+      )}
+      <div
+        className="accrodion-grp faq-one-accrodion overflow-hidden"
+      >
       {faqs.map(({ id, title, text }) => (
         <div
           key={id}
@@ -33,6 +39,7 @@ const Faqs = ({ faqs = [], className = "" }) => {
           </div>
         </div>
       ))}
+      </div>
     </div>
   );
 };

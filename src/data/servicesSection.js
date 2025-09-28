@@ -175,7 +175,7 @@ const commonServiceDerails = {
 
 export const consumerProduct = {
   image: image1,
-  title: "Consumer Product",
+  title: "C",
   ...commonServiceDerails,
 };
 
