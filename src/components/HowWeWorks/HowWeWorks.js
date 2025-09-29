@@ -10,6 +10,7 @@ import Link from "next/link";
 const HowWeWorks = (props) => {
   const {
     data: { tagline, title, works },
+    cta,
   } = props;
   return (
     <section className="how-we-works">
@@ -24,15 +25,17 @@ const HowWeWorks = (props) => {
             </ul>
           </Col>
         </Row>
-        <Row>
-          <Col xl={12} className="text-center">
-            <div className="how-we-works__cta">
-              <Link href="/contact" className="thm-btn">
-                Start Your Strategic Assessment
-              </Link>
-            </div>
-          </Col>
-        </Row>
+        {cta?.title && (
+          <Row>
+            <Col xl={12} className="text-center">
+              <div className="how-we-works__cta">
+                <Link href={cta?.link || "/contact"} className="thm-btn">
+                  {cta?.title}
+                </Link>
+              </div>
+            </Col>
+          </Row>
+        )}
       </Container>
     </section>
   );

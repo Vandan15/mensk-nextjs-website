@@ -39,9 +39,15 @@ export default function Home() {
       <TeamOne />
       {/* <TestimonialOne /> */}
       {/* <TrustedOne /> */}
-      <HowWeWorks data={howWeWorks} />
+      <HowWeWorks
+        data={howWeWorks}
+        cta={{
+          title: "Start Your Strategic Assessment",
+          link: "/contact",
+        }}
+      />
       <NewsOne showShape />
-      <ContactOne isTitleTwo showOnlyForm/>
+      <ContactOne isTitleTwo showOnlyForm />
       <CtaOne />
     </Layout>
   );

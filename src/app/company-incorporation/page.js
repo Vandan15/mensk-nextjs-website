@@ -13,6 +13,7 @@ import { serviceDetailsData } from "@/data/services";
 import { consumerProduct } from "@/data/servicesSection";
 import { Col, Container, Row } from "react-bootstrap";
 import Faq from "../faq/page";
+import CaseContentCards from "@/components/CaseSection/CaseContentCards";
 
 const title = "Company Incorporation";
 
@@ -24,7 +25,7 @@ export const metadata = {
 
 export default function CompanyIncorporation() {
   const {
-    companyIncorporation: { hero, trustSignals, challenges,solutions,process,faqs },
+    companyIncorporation: { hero, trustSignals, challenges,solutions,planning,faqs,process },
 
   } = serviceDetailsData;
 
@@ -49,7 +50,7 @@ export default function CompanyIncorporation() {
             /> */}
             <Row className="mb-5">
               <Col xl={12}>
-                <CaseDetailsContent
+                <CaseContentCards
                   title={hero?.title}
                   text1={hero?.description}
                   points={trustSignals?.map((item) => item.title)}
@@ -67,14 +68,23 @@ export default function CompanyIncorporation() {
             </Row>
             <Row className="mb-5">
               <Col xl={12}>
-                <WhatYouGet points={solutions.points} title={solutions?.title} text={solutions.description}/>
+                <CaseDetailsContent
+                  title={solutions?.title}
+                  text1={solutions?.description}
+                  points={solutions.points.map((item) => item.title)}
+                />
               </Col>
             </Row>
-            {/* <Row className="mb-5">
+            <Row className="mb-0">
+              <Col xl={12}>
+                <WhatYouGet points={planning.points} title={planning?.title} text={planning.description}/>
+              </Col>
+            </Row>
+            <Row className="mb-5">
               <Col xl={12}>
                 <HowWeWorks data={process}/>
               </Col>
-            </Row> */}
+            </Row>
             <Row className="mb-5">
               <Col xl={12}>
                 <Faqs faqs={faqs.faqs} title={faqs.title}/>

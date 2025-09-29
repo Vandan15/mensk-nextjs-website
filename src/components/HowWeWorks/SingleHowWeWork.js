@@ -16,9 +16,9 @@ const SingleHowWeWork = ({ work = {} }) => {
       <ul className="how-we-works__points">
         {points && points.map((point, index) => (
           <li key={index} className="how-we-works__point">
-            <div className="how-we-works__point-icon">
+            {points?.length > 1 && <div className="how-we-works__point-icon">
               <i className="fa fa-check"></i>
-            </div>
+            </div>}
             <span className="how-we-works__point-text">{point}</span>
           </li>
         ))}
