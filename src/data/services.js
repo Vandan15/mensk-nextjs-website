@@ -62,41 +62,55 @@ export const serviceDetailsData = {
         },
       ],
     },
+    planning:{
+      title: "How We Make It Happen",
+      description:
+        "",
+      points: [
+        {
+          title:
+            "Week 1: Strategic planning and document preparation",
+        },
+        {
+          title:
+            "Week 2: Government submissions and approvals",
+        },
+        {
+          title:
+            "Week 3: Banking coordination and visa applications",
+        },
+        {
+          title:
+            "Week 4: Final registrations and handover",
+        },
+      ],
+    },
     process: {
       tagline: "Our Process",
-      title: "How We Deliver Excellence",
+      title: "Why Smart Businesses Choose Us",
       works: [
         {
           id: 1,
           image: process1,
-          title: "Discovery & Strategy",
+          title: "Complete Transparency",
           points: [
-            "Comprehensive needs assessment",
-            "UAE market opportunity analysis",
-            "Strategic roadmap development",
-            "Service timeline establishment",
+            "You know exactly what's happening, when, and why",
           ],
         },
         {
           id: 2,
           image: process2,
-          title: "Implementation & Execution",
+          title: "Strategic Guidance",
           points: [
-            "Document preparation and submission",
-            "Government liaisons and approvals",
-            "Banking and service provider coordination",
-            "Progress monitoring and updates",
+            "We don't just process, we advise on optimal structures",
           ],
         },
         {
           id: 3,
           image: process3,
-          title: "Launch & Optimization",
+          title: "Relationship Capital",
           points: [
-            "Final approvals and documentation",
-            "Operational setup completion",
-            "Ongoing compliance monitoring",
-            "Strategic advisory relationship begins",
+            "Our connections expedite what others wait months for",
           ],
         },
       ],

@@ -3,7 +3,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 
-const CaseDetailsContent = ({
+const CaseContentCards = ({
   title = "",
   text1 = "",
   text2 = "",
@@ -22,26 +22,25 @@ const CaseDetailsContent = ({
             {text3 && <p className="case-details__content-text-3">{text3}</p>}
           </div>
         </Col>
-        {(points?.length > 0 || text4) && <Col xs={12}>
-          <div className="case-details__content-right">
-            {text4 && <p className="case-details__content-text-4">{text4}</p>}
-            <ul className="list-unstyled case-details__content-points">
+        <Col>
+          <div className="case-content-cards__container">
+            <div className="case-content-cards__grid">
               {points.map((point, i) => (
-                <li key={i}>
-                  <div className="icon">
-                    <i className="fa fa-arrow-right"></i>
+                <div key={i} className="case-content-card">
+                  <div className="case-content-card__icon">
+                    <i className="fa fa-check"></i>
                   </div>
-                  <div className="text">
+                  <div className="case-content-card__content">
                     <p>{point}</p>
                   </div>
-                </li>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
-        </Col>}
+        </Col>
       </Row>
     </div>
   );
 };
 
-export default CaseDetailsContent;
+export default CaseContentCards;
