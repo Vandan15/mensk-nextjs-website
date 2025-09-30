@@ -10,12 +10,17 @@ const PageHeader = ({
   title = "",
   parent = "",
   parentHref = "/",
+  imgSrc = "",
 }) => {
   return (
     <section className="page-header">
       <div
         className="page-header-bg"
-        style={{ backgroundImage: `url(${bg.src})` }}
+        style={{
+          backgroundImage: `url(${imgSrc})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
       ></div>
       <div className="page-header-shape-1 float-bob-x-6"></div>
       <div className="page-header-shape-2 float-bob-x-7"></div>

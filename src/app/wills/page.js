@@ -35,6 +35,7 @@ export default function Wills() {
         title={title}
         parent="Services"
         parentHref="/services"
+        imgSrc={hero.bannerImg.src}
       />
       <Container>
         <Row>

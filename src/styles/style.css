@@ -6992,7 +6992,7 @@ input[type="search"]::-webkit-search-results-decoration {
 .page-header {
   position: relative;
   display: block;
-  padding: 210px 0 118px;
+  padding: 400px 0 118px;
   background-color: var(--oslim-black);
   overflow: hidden;
   z-index: 1;

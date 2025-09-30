@@ -32,6 +32,7 @@ export default function Trademarks() {
         title={title}
         parent="Services"
         parentHref="/services"
+        imgSrc={hero.bannerImg.src}
       />
       <Container>
         <Row>
