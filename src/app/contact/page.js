@@ -5,6 +5,7 @@ import CtaOne from "@/components/CtaSection/CtaOne";
 import Header from "@/components/Header/Header";
 import Layout from "@/components/Layout/Layout";
 import PageHeader from "@/components/Reuseable/PageHeader";
+import ContactBg from "@/images/backgrounds/contact-bg.jpg";
 
 export const metadata = {
   title: "Contact | Mensk Consultancy",
@@ -15,7 +16,7 @@ export default function Contact() {
   return (
     <Layout pageTitle="Contact">
       <Header />
-      <PageHeader title="Begin Your Distinct UAE Journey Today" page="Contact us" />
+      <PageHeader title="Begin Your Distinct UAE Journey Today" page="Contact us" imgSrc={ContactBg.src}/>
       {/* <ContactDetails /> */}
       {/* <div className="mb-5"> */}
       <ContactOne isTitleTwo  />

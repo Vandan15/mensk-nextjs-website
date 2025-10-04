@@ -7034,8 +7034,8 @@ input[type="search"]::-webkit-search-results-decoration {
   background-size: cover;
   background-position: center;
   background-color: var(--oslim-black);
-  background-blend-mode: luminosity;
-  opacity: 0.4;
+  /* background-blend-mode: luminosity; */
+  opacity: 0.6;
   z-index: -1;
 }
 

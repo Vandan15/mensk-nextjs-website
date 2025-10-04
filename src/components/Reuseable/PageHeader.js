@@ -12,6 +12,7 @@ const PageHeader = ({
   parentHref = "/",
   imgSrc = "",
 }) => {
+  console.log(imgSrc)
   return (
     <section className="page-header">
       <div
@@ -22,8 +23,8 @@ const PageHeader = ({
           backgroundPosition: "center",
         }}
       ></div>
-      <div className="page-header-shape-1 float-bob-x-6"></div>
-      <div className="page-header-shape-2 float-bob-x-7"></div>
+      {/* <div className="page-header-shape-1 float-bob-x-6"></div>
+      <div className="page-header-shape-2 float-bob-x-7"></div> */}
       <Container>
         <div className="page-header__inner">
           <ul className="thm-breadcrumb list-unstyled">
