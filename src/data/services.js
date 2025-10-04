@@ -1,6 +1,12 @@
 import process1 from "@/images/process/1.png";
 import process2 from "@/images/process/2.png";
 import process3 from "@/images/process/3.png";
+import CompanyIncorporationImg from "@/images/services/company-incorporation.png";
+import WealthManagementImg from "@/images/services/wealth-management.png";
+import LegalAdvisoryImg from "@/images/services/legal-advisory.png";
+import RealEstateImg from "@/images/services/real-estate.png";
+import WillsImg from "@/images/services/wills.png";
+import TrademarksImg from "@/images/services/trademark.png";
 
 export const serviceDetailsData = {
   companyIncorporation: {
@@ -8,6 +14,7 @@ export const serviceDetailsData = {
       title: "Your Business Deserves a UAE Foundation Built to Last",
       description:
         "From ambitious solopreneurs to expanding multinationals, we handle every complexity while you focus on what matters: building your business.",
+      bannerImg: CompanyIncorporationImg,
     },
     trustSignals: [
       {
@@ -130,6 +137,7 @@ export const serviceDetailsData = {
       title: "Secure your intellectual property across UAE and GCC, and India",
       description:
         "Your brand is your identity. Secure it across UAE and GCC before competitors do.",
+      bannerImg: TrademarksImg,
     },
     trustSignals: [
       {
@@ -142,7 +150,6 @@ export const serviceDetailsData = {
         title: "Madrid Protocol Specialists",
       },
     ],
-
 
     challenges: {
       title: "Brand Thieves Don't Send Warning Letters",
@@ -208,7 +215,9 @@ export const serviceDetailsData = {
           id: 2,
           image: process2,
           title: "Strategic Guidance",
-          points: ["Multiple classes and jurisdictions optimized for your growth"],
+          points: [
+            "Multiple classes and jurisdictions optimized for your growth",
+          ],
         },
         {
           id: 3,
@@ -220,7 +229,9 @@ export const serviceDetailsData = {
           id: 4,
           image: process3,
           title: "Perfect Execution",
-          points: ["Planning so precise, you never have to worry about implementation"],
+          points: [
+            "Planning so precise, you never have to worry about implementation",
+          ],
         },
       ],
     },
@@ -250,6 +261,7 @@ export const serviceDetailsData = {
       title: "Give Your Loved Ones the Certainty They Deserve",
       description:
         "UAE succession laws can surprise expatriate families. Our DIFC-registered wills ensure your assets pass according to your wishes, not local regulations.",
+      bannerImg: WillsImg,
     },
     trustSignals: [
       {
@@ -323,19 +335,25 @@ export const serviceDetailsData = {
           id: 1,
           image: process1,
           title: "Cultural Sensitivity",
-          points: ["We understand the unique challenges expatriate families face"],
+          points: [
+            "We understand the unique challenges expatriate families face",
+          ],
         },
         {
           id: 2,
           image: process2,
           title: "Legal Expertise",
-          points: ["Deep knowledge of UAE, DIFC, and international succession laws"],
+          points: [
+            "Deep knowledge of UAE, DIFC, and international succession laws",
+          ],
         },
         {
           id: 3,
           image: process3,
           title: "Family Focus",
-          points: ["Your spouse and children's future security is our priority"],
+          points: [
+            "Your spouse and children's future security is our priority",
+          ],
         },
       ],
     },
@@ -362,9 +380,11 @@ export const serviceDetailsData = {
   },
   realEstate: {
     hero: {
-      title: "Your UAE Property Dreams, Financed with Expert Real Estate Advisory and Legal Guidance",
+      title:
+        "Your UAE Property Dreams, Financed with Expert Real Estate Advisory and Legal Guidance",
       description:
         "Navigate Dubai's dynamic property market with expert real estate options, legal and financial guidance that turns investment opportunities into secure wealth-building assets.",
+      bannerImg: RealEstateImg,
     },
     trustSignals: [
       {
@@ -417,10 +437,12 @@ export const serviceDetailsData = {
       description: "",
       points: [
         {
-          title: "Week 1: Financial assessment and mortgage pre-approval strategy",
+          title:
+            "Week 1: Financial assessment and mortgage pre-approval strategy",
         },
         {
-          title: "Week 2: Property search and market analysis based on your criteria",
+          title:
+            "Week 2: Property search and market analysis based on your criteria",
         },
         {
           title: "Week 3: Legal due diligence and contract negotiation",
@@ -438,7 +460,9 @@ export const serviceDetailsData = {
           id: 1,
           image: process1,
           title: "Market Intelligence",
-          points: ["Deep understanding of Dubai's micro-markets and growth patterns"],
+          points: [
+            "Deep understanding of Dubai's micro-markets and growth patterns",
+          ],
         },
         {
           id: 2,
@@ -450,13 +474,17 @@ export const serviceDetailsData = {
           id: 3,
           image: process3,
           title: "Legal Protection",
-          points: ["Every transaction reviewed by UAE property law specialists"],
+          points: [
+            "Every transaction reviewed by UAE property law specialists",
+          ],
         },
         {
           id: 4,
           image: process3,
           title: "Due Diligence",
-          points: ["Comprehensive verification to safeguard your investment decisions"],
+          points: [
+            "Comprehensive verification to safeguard your investment decisions",
+          ],
         },
       ],
     },
@@ -483,9 +511,11 @@ export const serviceDetailsData = {
   },
   legalAdvisory: {
     hero: {
-      title: "Make Every Decision in the UAE with Legal Confidence at Your Side",
+      title:
+        "Make Every Decision in the UAE with Legal Confidence at Your Side",
       description:
         "From contract negotiations to regulatory compliance, navigate UAE's evolving legal landscape with expert guidance that keeps you ahead of challenges.",
+      bannerImg: LegalAdvisoryImg,
     },
     trustSignals: [
       {
@@ -504,7 +534,8 @@ export const serviceDetailsData = {
         "UAE's business environment changes rapidly, with new regulations, compliance requirements, and legal precedents emerging regularly. One misunderstood contract clause or missed compliance deadline could result in significant penalties, business disruption, or competitive disadvantage.",
     },
     solutions: {
-      title: "Your Legal Intelligence Network that is Proactive, Precise, Protective and Solution Oriented",
+      title:
+        "Your Legal Intelligence Network that is Proactive, Precise, Protective and Solution Oriented",
       description:
         "We provide ongoing legal advisory that keeps you compliant, protected, and strategically positioned. Whether reviewing contracts or navigating regulatory changes, we deliver legal counsel that supports your business objectives while minimizing risk.",
       points: [
@@ -538,13 +569,16 @@ export const serviceDetailsData = {
           title: "Initial Consultation: Comprehensive legal needs assessment",
         },
         {
-          title: "Ongoing Advisory: Monthly legal updates and compliance monitoring",
+          title:
+            "Ongoing Advisory: Monthly legal updates and compliance monitoring",
         },
         {
-          title: "As-Needed Support: Contract reviews, dispute guidance, regulatory questions",
+          title:
+            "As-Needed Support: Contract reviews, dispute guidance, regulatory questions",
         },
         {
-          title: "Strategic Planning: Annual legal strategy reviews and risk assessments",
+          title:
+            "Strategic Planning: Annual legal strategy reviews and risk assessments",
         },
       ],
     },
@@ -598,6 +632,7 @@ export const serviceDetailsData = {
       title: "UAE Wealth Management Optimized for Growth and Protection",
       description:
         "Strategic wealth optimization for successful UAE residents who want their financial success to grow, compound, and transfer seamlessly to future generations.",
+      bannerImg: WealthManagementImg,
     },
     trustSignals: [
       {
@@ -619,7 +654,8 @@ export const serviceDetailsData = {
         "Your UAE business success has created wealth, but UAE's unique tax environment, currency considerations, and cross-border complexities require sophisticated strategies. Without proper planning, you could miss optimization opportunities or face unexpected tax obligations in your home country.",
     },
     solutions: {
-      title: "Your Wealth Architecture Strategically Built for Growth and Protection",
+      title:
+        "Your Wealth Architecture Strategically Built for Growth and Protection",
       description:
         "We design comprehensive wealth strategies that optimize your UAE position while coordinating with international obligations. From investment optimization to succession planning, every decision strengthens your financial foundation for generations.",
       points: [
@@ -656,7 +692,8 @@ export const serviceDetailsData = {
           title: "Month 2: Strategy development and structure implementation",
         },
         {
-          title: "Month 3: Investment allocation and tax optimization execution",
+          title:
+            "Month 3: Investment allocation and tax optimization execution",
         },
         {
           title: "Ongoing: Quarterly reviews and annual strategy updates",
@@ -671,13 +708,17 @@ export const serviceDetailsData = {
           id: 1,
           image: process1,
           title: "UAE Expertise",
-          points: ["Deep understanding of local and international wealth implications"],
+          points: [
+            "Deep understanding of local and international wealth implications",
+          ],
         },
         {
           id: 2,
           image: process2,
           title: "Holistic Approach",
-          points: ["Coordinate investments, taxes, estate planning, and risk management"],
+          points: [
+            "Coordinate investments, taxes, estate planning, and risk management",
+          ],
         },
         {
           id: 3,
@@ -692,7 +733,8 @@ export const serviceDetailsData = {
       faqs: [
         {
           id: 1,
-          title: "How does UAE's tax-free status affect my global tax obligations?",
+          title:
+            "How does UAE's tax-free status affect my global tax obligations?",
           text: "UAE residency can provide significant tax advantages, but home country obligations may remain. We coordinate strategies that optimize your global tax position.",
         },
         {

@@ -26,7 +26,6 @@ export const metadata = {
 export default function CompanyIncorporation() {
   const {
     companyIncorporation: { hero, trustSignals, challenges,solutions,planning,faqs,process },
-
   } = serviceDetailsData;
 
   return (
@@ -37,6 +36,7 @@ export default function CompanyIncorporation() {
         title={title}
         parent="Services"
         parentHref="/services"
+        imgSrc={hero.bannerImg.src}
       />
       {/* <ServiceDetails service={consumerProduct} /> */}
       <Container>
