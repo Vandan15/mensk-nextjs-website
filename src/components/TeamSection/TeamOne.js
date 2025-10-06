@@ -13,7 +13,7 @@ const TeamOne = ({ id = "" }) => {
   const ref = useActive(id);
 
   return (
-    <section ref={ref} className="team-one" id={id}>
+    <section ref={ref} className="team-one pt-0" id={id}>
       <div className="team-one__container">
         <Title title={title} tagline={tagline} className="text-center" />
         <Row>

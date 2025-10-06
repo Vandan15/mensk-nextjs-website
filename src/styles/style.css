@@ -3455,8 +3455,8 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .team-one__social {
   position: absolute;
-  top: 50px;
-  right: 50px;
+  top: 10px;
+  right: 10px;
   transform: scaleX(0);
   transform-origin: center;
   transform-style: preserve-3d;

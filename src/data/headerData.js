@@ -159,7 +159,7 @@ export const navItems = [
   {
     id: 2,
     name: "About",
-    href: "/",
+    href: "/about-us",
     // subNavItems: servicesSubNavItems,
   },
   // {
