@@ -31,7 +31,13 @@ export const teamOne = {
       title: "Consultant",
       image: "sadaf.jpg",
       description: "With a robust background in legal advisory and regulatory compliance, Sadaf bridges the gap between complex market dynamics and clear, actionable strategies. Her focus on transparency and operational excellence ensures our clients always have their best interests safeguarded.",
-      socials,
+      socials:[
+        {
+          id: 1,
+          href: "https://www.linkedin.com/in/sadaf-khan-07126b62",
+          icon: "fab fa-linkedin",
+        },
+      ],
     },
     {
       id: 2,
@@ -39,7 +45,13 @@ export const teamOne = {
       title: "Advisor",
       image: "kashish.jpg",
       description: "Kashish’s expertise encompasses strategic business planning and corporate governance with a sharp understanding of cross-border commercial nuances. His commitment to tailored client solutions drives impactful business outcomes in the UAE.",
-      socials,
+       socials:[
+        {
+          id: 1,
+          href: "https://www.linkedin.com/in/kashish-poojara-b5736058/",
+          icon: "fab fa-linkedin",
+        },
+      ],
     },
     {
       id: 3,
@@ -47,7 +59,13 @@ export const teamOne = {
       title: "Manager",
       image: "mudit.jpg",
       description: "Specializing in legal advisory and wealth management, Mudit melds rigorous legal insight with proactive financial planning. His approach prioritizes long-term stability and legacy protection for high-net-worth clients and enterprises alike.",
-      socials,
+       socials:[
+        {
+          id: 1,
+          href: "https://www.linkedin.com/in/mudit-makhijani-66912aaa",
+          icon: "fab fa-linkedin",
+        },
+      ],
     },
     {
       id: 4,
@@ -55,7 +73,13 @@ export const teamOne = {
       title: "Co Founder",
       image: "eeshan.jpg",
       description: "Eeshan’s strength lies in market research and operational efficiency improvements. His analytical rigor and strategic foresight equip clients with competitive advantages while navigating the evolving regulatory environment of the UAE.",
-      socials,
+       socials:[
+        {
+          id: 1,
+          href: "Eeshan LinkedIn profile - https://www.linkedin.com/in/eeshan-pandey-b77b1a164",
+          icon: "fab fa-linkedin",
+        },
+      ],
     },
   ],
 };
