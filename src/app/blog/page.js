@@ -3,6 +3,7 @@ import Layout from "@/components/Layout/Layout";
 import BlogPagination from "@/components/NewsSection/BlogPagination";
 import NewsOne from "@/components/NewsSection/NewsOne";
 import PageHeader from "@/components/Reuseable/PageHeader";
+import ContactBg from "@/images/backgrounds/contact-bg.jpg";
 
 export const metadata = {
   title: "Blog | Mensk Consultancy",
@@ -13,7 +14,7 @@ export default function Blog() {
   return (
     <Layout pageTitle="Blog" footerClassName="site-footer-three">
       <Header />
-      <PageHeader page="Blog" title="Stay Informed. Stay Ahead. UAE Market Insights." />
+      <PageHeader page="Blog" title="Stay Informed. Stay Ahead. UAE Market Insights." imgSrc={ContactBg.src}/>
       <NewsOne className="news-page" hideTitle>
         {/* <BlogPagination /> */}
       </NewsOne>
