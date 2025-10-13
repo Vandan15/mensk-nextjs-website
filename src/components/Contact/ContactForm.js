@@ -58,7 +58,7 @@ const ContactForm = ({
     setSuccess(false);
     try {
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbzjV8mdl6nF96BZNjpLQs4X9ajgJH88CUfyvnmvJQsdt35wPd_wPoOTFkufDlmIyUgk/exec",
+        "https://script.google.com/macros/s/AKfycbxnkTK-SJd8RLGQhurjEw-N6fAXxzQ0BJbK0OPV46Wzh5mg34SQ7MUUpxa6QvvelmV7/exec",
         {
           method: "POST",
           headers: {
