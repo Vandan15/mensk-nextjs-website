@@ -7,10 +7,9 @@ import { Col, Container, Row } from "react-bootstrap";
 import Title from "../Reuseable/Title";
 import SingleServiceTwo from "./SingleServiceTwo";
 
-const { title, tagline, text, services } = servicesTwo;
-
 const ServicesTwo = ({ id = "" }) => {
   const ref = useActive(id);
+  const { title, tagline, text, services } = servicesTwo;
 
   return (
     <section ref={ref} className="services-two" id={id}>

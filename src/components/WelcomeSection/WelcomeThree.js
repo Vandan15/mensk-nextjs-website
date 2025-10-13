@@ -11,23 +11,23 @@ import TextSplit from "../Reuseable/TextSplit";
 import Title from "../Reuseable/Title";
 import VideoModal from "../Reuseable/VideoModal";
 
-const {
-  title,
-  tagline,
-  points,
-  text,
-  videoBg,
-  percent,
-  videoText,
-  experienceText,
-  images,
-  videoId,
-} = welcomeThree;
-
 const WelcomeThree = ({ id = "" }) => {
   const [countStart, setCountStart] = useState(false);
   const [isOpen, setOpen] = useState(false);
   const ref = useActive(id);
+
+  const {
+    title,
+    tagline,
+    points,
+    text,
+    videoBg,
+    percent,
+    videoText,
+    experienceText,
+    images,
+    videoId,
+  } = welcomeThree;
 
   const onVisibilityChange = (isVisible) => {
     if (isVisible) {

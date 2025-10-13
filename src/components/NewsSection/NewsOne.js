@@ -8,8 +8,6 @@ import Title from "../Reuseable/Title";
 import SingleNewsOne from "./SingleNewsOne";
 import Link from "next/link";
 
-const { tagline, title } = newsOne;
-
 const NewsOne = ({
   className = "news-one",
   showShape = false,
@@ -18,6 +16,7 @@ const NewsOne = ({
   children,
 }) => {
   const ref = useActive(id);
+  const { tagline, title } = newsOne;
 
   return (
     <section ref={ref} className={className} id={id}>

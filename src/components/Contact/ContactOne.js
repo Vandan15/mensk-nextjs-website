@@ -8,11 +8,10 @@ import Title from "../Reuseable/Title";
 import ContactForm from "./ContactForm";
 import TextSplit from "../Reuseable/TextSplit";
 
-const { bg, tagline, title, text, officeInfo, inputs, bottomTitle, contacts } =
-  contactOne;
-
 const ContactOne = ({ id = "", showOnlyForm = false }) => {
   const ref = useActive(id, 150);
+  const { bg, tagline, title, text, officeInfo, inputs, bottomTitle, contacts } =
+    contactOne;
 
   return (
     <section ref={ref} className="contact-one" id={id}>

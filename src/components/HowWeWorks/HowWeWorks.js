@@ -9,9 +9,10 @@ import Link from "next/link";
 
 const HowWeWorks = (props) => {
   const {
-    data: { tagline, title, works },
+    data = howWeWorks,
     cta,
   } = props;
+  const { tagline, title, works } = data;
   return (
     <section className="how-we-works">
       <Container>

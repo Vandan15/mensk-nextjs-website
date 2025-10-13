@@ -46,10 +46,9 @@ const options = {
   },
 };
 
-const { tagline, title, testimonials } = testimonialThree;
-
 const TestimonialThree = ({ id = "" }) => {
   const ref = useActive(id, 160);
+  const { tagline, title, testimonials } = testimonialThree;
 
   return (
     <section ref={ref} className="testimonial-three" id={id}>

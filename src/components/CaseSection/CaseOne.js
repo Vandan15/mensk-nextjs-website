@@ -7,10 +7,9 @@ import { Col, Container, Row } from "react-bootstrap";
 import Title from "../Reuseable/Title";
 import SingleCaseOne from "./SingleCaseOne";
 
-const { tagline, title, cases } = caseOne;
-
 const CaseOne = ({ className = "", smallImage = false, id = "" }) => {
   const ref = useActive(id);
+  const { tagline, title, cases } = caseOne;
 
   return (
     <section ref={ref} className={`case-one ${className}`} id={id}>

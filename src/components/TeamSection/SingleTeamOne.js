@@ -50,7 +50,7 @@ const SingleTeamOne = ({ team = {} }) => {
         <ul className="list-unstyled team-one__social">
           {socials.map(({ id, href, icon }) => (
             <li key={id}>
-              <a href={href} target="_blank">
+              <a href={href} target="_blank" rel="noreferrer">
                 <i className={icon}></i>
               </a>
             </li>

@@ -11,10 +11,9 @@ import VideoModal from "../Reuseable/VideoModal";
 
 const Jarallax = dynamic(() => import("../Jarallax/Jarallax"), { ssr: false });
 
-const { bg, title, videoId, videoText } = ourMissionTwo;
-
 const OurMissionTwo = ({ className = "", shape = 2 }) => {
   const [isOpen, setOpen] = useState(false);
+  const { bg, title, videoId, videoText } = ourMissionTwo;
 
   return (
     <>

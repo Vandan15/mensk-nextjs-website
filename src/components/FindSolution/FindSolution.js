@@ -5,9 +5,9 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Link from "../Reuseable/Link";
 
-const { text, linkText, href } = findSolution;
-
 const FindSolution = () => {
+  const { text, linkText, href } = findSolution;
+
   return (
     <section className="find-solution">
       <Container>
