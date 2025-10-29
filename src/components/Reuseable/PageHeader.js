@@ -12,7 +12,6 @@ const PageHeader = ({
   parentHref = "/",
   imgSrc = "",
 }) => {
-  console.log(imgSrc)
   return (
     <section className="page-header">
       <div

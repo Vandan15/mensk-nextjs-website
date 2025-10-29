@@ -24,6 +24,12 @@
   font-size: 16px;
   line-height: 1.7;
 }
+.news-details__content-html img {
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 16px;
+  max-height: 450px;
+}
 
 .news-details__content-html ul,
 .news-details__content-html ol {

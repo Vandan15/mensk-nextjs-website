@@ -8,7 +8,7 @@ import Header from "@/components/Header/Header";
 import HowWeWorks from "@/components/HowWeWorks/HowWeWorks";
 import Layout from "@/components/Layout/Layout";
 import MainSlider from "@/components/MainSlider/MainSlider";
-import NewsOne from "@/components/NewsSection/NewsOne";
+import NewsOneWrapper from "@/components/NewsSection/NewsOneWrapper";
 import OurMission from "@/components/OurMission/OurMission";
 import TeamOne from "@/components/TeamSection/TeamOne";
 import TestimonialOne from "@/components/TestimonialSection/TestimonialOne";
@@ -46,7 +46,7 @@ export default function Home() {
           link: "/contact",
         }}
       />
-      <NewsOne showShape />
+      <NewsOneWrapper showShape />
       <ContactOne isTitleTwo showOnlyForm />
       <CtaOne />
     </Layout>
