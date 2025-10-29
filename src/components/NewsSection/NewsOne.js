@@ -14,9 +14,13 @@ const NewsOne = ({
   id = "",
   hideTitle = false,
   children,
+  posts = [],
 }) => {
   const ref = useActive(id);
   const { tagline, title } = newsOne;
+
+  // Fallback to static data if no posts provided
+  const displayPosts = posts.length > 0 ? posts : Object.values(blogDetailsData).slice(0, 3);
 
   return (
     <section ref={ref} className={className} id={id}>
@@ -31,7 +35,7 @@ const NewsOne = ({
           <Title title={title} tagline={tagline} className="text-center" />
         )}
         <Row>
-          {Object.values(blogDetailsData).slice(0, !hideTitle ? 3 : undefined).map((news) => (
+          {displayPosts.map((news) => (
             <Col
               xl={4}
               lg={hideTitle ? 6 : 4}

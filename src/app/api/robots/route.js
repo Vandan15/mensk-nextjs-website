@@ -3,7 +3,9 @@ export function GET() {
 
   const content = allowCrawling
     ? `User-agent: *
-Allow: /`
+Allow: /
+
+Sitemap: https://menskconsultancy.com/sitemap.xml`
     : `User-agent: *
 Disallow: /`;
 

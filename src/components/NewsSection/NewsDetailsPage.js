@@ -1,21 +1,10 @@
 "use client";
 
-import { getBlogDetails, getBlogDetailsBySlug } from "@/data/newsSection";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import NewsDetailsLeft from "./NewsDetailsLeft";
 
-const NewsDetailsPage = ({ blogId, blogSlug }) => {
-  let blogDetails;
-
-  if (blogId) {
-    blogDetails = getBlogDetails(parseInt(blogId));
-  } else if (blogSlug) {
-    blogDetails = getBlogDetailsBySlug(blogSlug);
-  } else {
-    blogDetails = getBlogDetails(1);
-  }
-
+const NewsDetailsPage = ({ blogDetails }) => {
   if (!blogDetails) {
     return (
       <section className="news-details">
@@ -40,9 +29,6 @@ const NewsDetailsPage = ({ blogId, blogSlug }) => {
           <Col xl={12} lg={12}>
             <NewsDetailsLeft news={blogDetails} />
           </Col>
-          {/* <Col xl={4} lg={5}>
-            <div>Sidebar content can be added here</div>
-          </Col> */}
         </Row>
       </Container>
     </section>

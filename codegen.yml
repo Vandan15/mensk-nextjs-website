@@ -1,0 +1,13 @@
+overwrite: true
+schema: "https://menskconsultancy.com/graphql"
+documents: "src/graphql/**/*.js"
+generates:
+  src/graphql/generated.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+    config:
+      skipTypename: false
+      withHooks: false
+      withHOC: false
+      withComponent: false
