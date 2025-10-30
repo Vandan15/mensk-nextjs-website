@@ -45,7 +45,7 @@ export const metadata = {
     siteName: "Mensk Consultancy",
     images: [
       {
-        url: "/assets/images/og/og-mensk.jpg",
+        url: "/assets/images/og/og-mensk.png",
         width: 1200,
         height: 630,
         alt: "Mensk Consultancy - UAE Business Consultancy Firm",
