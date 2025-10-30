@@ -641,6 +641,7 @@
     padding-left: 0;
     flex-direction: column;
     text-align: center;
+    padding-right: 0;
   }
 
   .cta-one__title {
@@ -943,7 +944,7 @@
   }
 
   .case-details__content {
-    margin-top: 0px;
+    margin-top: 24px;
   }
 
   .error-page__title {
