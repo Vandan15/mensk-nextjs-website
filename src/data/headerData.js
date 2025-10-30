@@ -217,16 +217,16 @@ const socials = [
     icon: "fab fa-linkedin",
     href: "https://www.linkedin.com/company/mensk-consultancy-llc/",
   },
-  {
-    id: 7,
-    icon: "fab fa-twitter",
-    href: "https://www.linkedin.com/company/mensk-consultancy-llc/",
-  },
+  // {
+  //   id: 7,
+  //   icon: "fab fa-twitter",
+  //   href: "https://www.linkedin.com/company/mensk-consultancy-llc/",
+  // },
   
   {
     id: 6,
     icon: "fab fa-whatsapp",
-    href: "https://wa.me/971501234567",
+    href: "https://wa.me/+971501234567",
   },
   // {
   //   id: 2,
