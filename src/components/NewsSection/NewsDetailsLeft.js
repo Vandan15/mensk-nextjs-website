@@ -2,146 +2,90 @@
 
 import React, { useState, useEffect } from "react";
 import { Image } from "react-bootstrap";
-import ContactForm from "../Contact/ContactForm";
 import Link from "../Reuseable/Link";
-import TextSplit from "../Reuseable/TextSplit";
-import CommentOne from "./CommentOne";
-import { loadBlogContent } from "@/utils/loadBlogContent";
 
 const NewsDetailsLeft = ({ news = {} }) => {
   const {
     image,
+    imageAlt,
     subtitle,
     date,
-    // comments,
     title,
-    text,
-    text2,
-    tags,
-    socials,
-    pagination,
+    content,
+    excerpt,
+    tags = [],
+    categories = [],
+    author,
     slug,
-    // inputs,
   } = news;
 
-  const [htmlContent, setHtmlContent] = useState(null);
-  const [isLoading, setIsLoading] = useState(false);
+
   const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
     setIsMounted(true);
-    // Load HTML content on client side
-    if (slug) {
-      setIsLoading(true);
-      loadBlogContent(slug)
-        .then((content) => {
-          if (content) {
-            setHtmlContent(content);
-          }
-        })
-        .catch((error) => {
-          console.error('Failed to load blog content:', error);
-        })
-        .finally(() => {
-          setIsLoading(false);
-        });
-    }
-  }, [slug]);
+  }, []);
 
-  // Prevent hydration mismatch by not rendering HTML content until mounted
+  // Format date
+  const formatDate = (dateString) => {
+    if (!dateString) return '';
+    const date = new Date(dateString);
+    return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  };
+
+  // Prevent hydration mismatch by not rendering until mounted
   if (!isMounted) {
-    return (
-      <div className="news-details__left">
-        <div className="news-details__img">
-          <Image src={image.src} alt="" />
-        </div>
-        <div className="news-details__content">
-          <p className="news-details__sub-title">{subtitle}</p>
-          <ul className="list-unstyled news-details__meta">
-            <li>
-              <Link href={`/blog/${slug}`}>
-                <i className="far fa-clock"></i> {date}
-              </Link>
-            </li>
-          </ul>
-          <h3 className="news-details__title">{title}</h3>
-          <p className="news-details__text-1">{text}</p>
-          <p className="news-details__text-2">{text2}</p>
-        </div>
-      </div>
-    );
+    return null;
   }
 
   return (
     <div className="news-details__left">
-      <div className="news-details__img">
-        <Image src={image.src} alt="" />
-      </div>
+      {/* {image && (
+        <div className="news-details__img">
+          <Image src={image} alt={imageAlt || title} />
+        </div>
+      )} */}
       <div className="news-details__content">
-        <p className="news-details__sub-title">{subtitle}</p>
+        {(subtitle || (categories && categories.length > 0)) && (
+          <p className="news-details__sub-title">
+            {subtitle || categories[0]?.name}
+          </p>
+        )}
         <ul className="list-unstyled news-details__meta">
           <li>
-            <Link href="/blog-details">
-              <i className="far fa-clock"></i> {date}
-            </Link>
+            <i className="far fa-clock"></i> {formatDate(date)}
           </li>
-          {/* <li>
-            <span>/</span>
-          </li>
-          <li>
-            <Link href="/blog-details">
-              <i className="far fa-comments"></i> {comments.length} Comments
-            </Link>
-          </li> */}
+          {author && author.name && (
+            <>
+              <li>
+                <span>/</span>
+              </li>
+              <li>
+                <i className="far fa-user"></i> {author.name}
+              </li>
+            </>
+          )}
         </ul>
         <h3 className="news-details__title">{title}</h3>
-        {isLoading ? (
-          <div className="news-details__loading">
-            <p>Loading content...</p>
-          </div>
-        ) : htmlContent ? (
+        {content && (
           <div
             className="news-details__content-html"
-            dangerouslySetInnerHTML={{ __html: htmlContent }}
+            dangerouslySetInnerHTML={{ __html: content }}
           />
-        ) : (
-          <>
-            <p className="news-details__text-1">{text}</p>
-            <p className="news-details__text-2">{text2}</p>
-          </>
         )}
       </div>
-      {/* <div className="news-details__bottom">
-        <p className="news-details__tags">
-          <span>Tags</span>
-          {tags.map((tag, i) => (
-            <a href="#" key={i}>
-              {tag}
-            </a>
-          ))}
-        </p>
-        <div className="news-details__social-list">
-          {socials.map(({ id, href, icon }) => (
-            <a key={id} href={href}>
-              <i className={icon}></i>
-            </a>
-          ))}
+      {/* {tags && tags.length > 0 && (
+        <div className="news-details__bottom">
+          <p className="news-details__tags">
+            <span>Tags</span>
+            {tags.map((tag, i) => (
+              <Link href={`/blog?tag=${tag.slug}`} key={i}>
+                {tag.name}
+              </Link>
+            ))}
+          </p>
         </div>
-      </div> */}
-      {/* <div className="news-details__pagenation-box">
-        <ul className="list-unstyled news-details__pagenation">
-          {pagination.map((text, i) => (
-            <li key={i}>
-              <TextSplit text={text} />
-            </li>
-          ))}
-        </ul>
-      </div> */}
-      {/* <CommentOne comments={comments} />
-      <div className="comment-form">
-        <h3 className="comment-form__title">Leave a Comment</h3>
-        <ContactForm inputs={inputs} btnText="Submit comment" />
-      </div> */}
+      )} */}
     </div>
   );
 };
