@@ -5,7 +5,7 @@ const footerData = {
   bg,
   logo,
   aboutText: ["Mensk Consultancy LLC"],
-  aboutSubText:["Licensed by Dubai Economic Department","License #: [Number]"],
+  aboutSubText:["Licensed by Dubai Economic Department","License: 1369980"],
   socials: [
     
     // {
@@ -92,6 +92,7 @@ const footerData = {
   phone: "+97-1529056309",
   phoneHref: "971529056309",
   email: "info@menskconsultancy.com",
+  disclaimer: "Disclaimer: Guarantees, timelines, and compliance assurances are subject to the client's timely provision of all necessary information and documents, as well as any unforeseen real-time changes in governmental, regulatory, or judicial requirements that may impact the service process.",
   author: "Oslim",
   year: new Date().getFullYear(),
 };

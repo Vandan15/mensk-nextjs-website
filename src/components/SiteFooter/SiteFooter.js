@@ -19,6 +19,7 @@ const {
   phone,
   phoneHref,
   email,
+  disclaimer,
 } = footerData;
 
 const SiteFooter = ({ footerClassName = "" }) => {
@@ -139,6 +140,9 @@ const SiteFooter = ({ footerClassName = "" }) => {
           <Row>
             <Col xl={12}>
               <div className="site-footer__bottom-inner">
+                <p className="site-footer__disclaimer-text">
+                  {disclaimer}
+                </p>
                 <p className="site-footer__bottom-text">
                   Copyright {year} Mensk Consultancy All rights reserved by
                   Zombie Marketers Pvt. Ltd.

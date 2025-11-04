@@ -5,7 +5,7 @@ export const mainSlider = [
     id: 1,
     bg: "main-slider-1-1.jpg",
     title: "Your Golden Ticket to Strategic UAE Success",
-    subtitle: "Business, legal and legacy, handled with finesse by one sophisticated alliance.",
+    subtitle: "Business setup and compliances handled with finesse by one sophisticated alliance.",
     href: "/contact",
   },
   // {
