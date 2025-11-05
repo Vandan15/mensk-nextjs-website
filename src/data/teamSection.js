@@ -28,7 +28,7 @@ export const teamOne = {
     {
       id: 1,
       name: "Ms. Sadaf Khan",
-      title: "Consultant",
+      title: "Partner",
       image: "sadaf.jpg",
       description: "With a robust background in legal advisory and regulatory compliance, Sadaf bridges the gap between complex market dynamics and clear, actionable strategies. Her focus on transparency and operational excellence ensures our clients always have their best interests safeguarded.",
       socials:[
@@ -42,7 +42,7 @@ export const teamOne = {
     {
       id: 2,
       name: "Mr. Kashish Poojara",
-      title: "Advisor",
+      title: "Partner",
       image: "kashish.jpg",
       description: "Kashish’s expertise encompasses strategic business planning and corporate governance with a sharp understanding of cross-border commercial nuances. His commitment to tailored client solutions drives impactful business outcomes in the UAE.",
        socials:[
@@ -56,7 +56,7 @@ export const teamOne = {
     {
       id: 3,
       name: "Mr. Mudit Makhijani",
-      title: "Manager",
+      title: "Partner",
       image: "mudit.jpg",
       description: "Specializing in legal advisory and wealth management, Mudit melds rigorous legal insight with proactive financial planning. His approach prioritizes long-term stability and legacy protection for high-net-worth clients and enterprises alike.",
        socials:[
@@ -70,7 +70,7 @@ export const teamOne = {
     {
       id: 4,
       name: "Mr. Eeshan Pandey",
-      title: "Co Founder",
+      title: "Partner",
       image: "eeshan.jpg",
       description: "Eeshan’s strength lies in market research and operational efficiency improvements. His analytical rigor and strategic foresight equip clients with competitive advantages while navigating the evolving regulatory environment of the UAE.",
        socials:[
