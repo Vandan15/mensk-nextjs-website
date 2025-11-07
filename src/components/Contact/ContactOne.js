@@ -1,0 +1,98 @@
+"use client";
+
+import { contactOne } from "@/data/contact";
+import useActive from "@/hooks/useActive";
+import React from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import Title from "../Reuseable/Title";
+import ContactForm from "./ContactForm";
+import TextSplit from "../Reuseable/TextSplit";
+
+const ContactOne = ({ id = "", showOnlyForm = false }) => {
+  const ref = useActive(id, 150);
+  const { bg, tagline, title, text, officeInfo, inputs, bottomTitle, contacts } =
+    contactOne;
+
+  return (
+    <section ref={ref} className="contact-one" id={id}>
+      <div
+        className="contact-one-shape"
+        style={{ backgroundImage: `url(${bg.src})` }}
+      ></div>
+      <Container>
+        <div className="contact-one__top">
+          <Row>
+            {!showOnlyForm && (
+              <Col xl={5} lg={5}>
+                <div className="contact-one__top-left">
+                  <Title title={title} tagline={tagline} className="text-left" />
+                  <p className="contact-one__text">{text}</p>
+                  <div className="contact-one__office-info">
+                    {officeInfo && Object.entries(officeInfo).map(([key, info]) => (
+                      <div key={key} className="contact-one__info-item">
+                        <h5 className="contact-one__info-title">{info.title}</h5>
+                        {key === 'phone' ? (
+                          <a href={`tel:${info.text.replace(/\s+/g, '')}`} className="contact-one__info-text contact-one__info-link">
+                            {info.text}
+                          </a>
+                        ) : key === 'email' ? (
+                          <a href={`mailto:${info.text}`} className="contact-one__info-text contact-one__info-link">
+                            {info.text}
+                          </a>
+                        ) : (
+                          <p className="contact-one__info-text">{info.text}</p>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </Col>
+            )}
+            <Col xl={showOnlyForm ? 12 : 7} lg={showOnlyForm ? 12 : 7}>
+              <div className="contact-one__top-right">
+                {showOnlyForm && (
+                  <div className="mb-5">
+                  <h3 className="cta-one__title">
+                  <TextSplit text="Begin Your Distinct UAE Journey Today" />
+                </h3>
+                </div>
+                )}
+                <ContactForm
+                  inputs={inputs}
+                  formClassName="contact-one__form"
+                  inputClassName="contact-form__input-box"
+                  messageClassName="contact-form__input-message-box"
+                  btnBoxClassName="contact-form__input-btn-box"
+                  btnClassName="contact-form__btn"
+                />
+              </div>
+            </Col>
+          </Row>
+        </div>
+        {/* <div className="contact-one__bottom">
+          <h2 className="contact-one__bottom-title">{bottomTitle}</h2>
+          <Row>
+            {contacts.map(({ id, title, text, email, phone, phoneHref }) => (
+              <Col key={id} xl={3} lg={6} md={6} className="animated fadeInUp">
+                <div className="contact-one__single">
+                  <h3 className="contact-one__title">{title}</h3>
+                  <p className="contact-one__text-2">{text}</p>
+                  <h4 className="contact-one__contact-info">
+                    <a href={`mailto:${email}`} className="contact-one__email">
+                      {email}
+                    </a>
+                    <a href={`tel:${phoneHref}`} className="contact-one__phone">
+                      {phone}
+                    </a>
+                  </h4>
+                </div>
+              </Col>
+            ))}
+          </Row>
+        </div> */}
+      </Container>
+    </section>
+  );
+};
+
+export default ContactOne;

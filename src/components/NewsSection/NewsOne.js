@@ -1,0 +1,67 @@
+"use client";
+
+import { newsOne, blogDetailsData } from "@/data/newsSection";
+import useActive from "@/hooks/useActive";
+import React from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import Title from "../Reuseable/Title";
+import SingleNewsOne from "./SingleNewsOne";
+import Link from "next/link";
+
+const NewsOne = ({
+  className = "news-one",
+  showShape = false,
+  id = "",
+  hideTitle = false,
+  children,
+  posts = [],
+}) => {
+  const ref = useActive(id);
+  const { tagline, title } = newsOne;
+
+  // Fallback to static data if no posts provided
+  const displayPosts = posts.length > 0 ? posts : Object.values(blogDetailsData).slice(0, 3);
+
+  return (
+    <section ref={ref} className={className} id={id}>
+      {showShape && (
+        <>
+          <div className="news-one-shape-1 shapemover2"></div>
+          <div className="news-one-shape-2 float-bob-x-2"></div>
+        </>
+      )}
+      <Container>
+        {!hideTitle && (
+          <Title title={title} tagline={tagline} className="text-center" />
+        )}
+        <Row>
+          {displayPosts.map((news) => (
+            <Col
+              xl={4}
+              lg={hideTitle ? 6 : 4}
+              md={hideTitle ? 6 : undefined}
+              key={news.id}
+              className="animated fadeInUp"
+            >
+              <SingleNewsOne news={news} />
+            </Col>
+          ))}
+        </Row>
+        {!hideTitle && (
+          <Row>
+            <Col xl={12} className="text-center">
+              <div className="news-one__cta">
+                <Link href="/blog" className="thm-btn">
+                  Access All Insights
+                </Link>
+              </div>
+            </Col>
+          </Row>
+        )}
+        {children}
+      </Container>
+    </section>
+  );
+};
+
+export default NewsOne;
