@@ -1,4 +1,5 @@
 import ContextProvider from "@/context/ContextProvider";
+import { GoogleTagManager } from "@next/third-parties/google";
 // import { Catamaran } from "next/font/google";
 import "@/vendors/animate/animate.min.css";
 import "@/vendors/animate/custom-animate.css";
@@ -26,6 +27,9 @@ import "@/styles/blog-content.css";
 export const metadata = {
   title: "No.1 law & Commerce Consultancy Firm in UAE | Mensk Consultancy",
   description: "Elevate your business strategy with MENSK Consultancy&#039;s specialized services in Marketing, HR, Management, and AI consultancy.",
+  verification: {
+    google: "RWtHngy-BTueA6rJZ79u4PkiRkp_oE-Ye0ckVvulmAU",
+  },
   icons: {
     icon: [
       { url: "/favicon.ico" },
@@ -72,6 +76,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
+        <GoogleTagManager gtmId="GTM-P23RG44B" />
         <ContextProvider>
           {children}
         </ContextProvider>
