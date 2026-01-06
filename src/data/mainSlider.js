@@ -3,7 +3,7 @@ import bg from "@/images/backgrounds/main-slider-3-bg.jpg";
 export const mainSlider = [
   {
     id: 1,
-    bg: "main-slider-1-1.jpg",
+    bg: "main-slider-1-1-compressed.jpg",
     title: "Your Golden Ticket to Strategic UAE Success",
     subtitle: "Business setup and compliances handled with finesse by one sophisticated alliance.",
     href: "/contact",
